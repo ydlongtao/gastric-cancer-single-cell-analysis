@@ -1,0 +1,47 @@
+.DS_Store
+.Rhistory
+Rplots.pdf
+
+# External source caches and local package builds
+external/
+*.o
+*.so
+*.dylib
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Rust
+target/
+**/target/
+
+# Project outputs
+data/raw/
+data/processed/
+results/**
+
+# Keep lightweight public-facing result summaries and final figures
+!results/
+!results/GSE234129/
+!results/GSE234129/GSE234129_analysis_report.md
+!results/GSE234129/figures/
+!results/GSE234129/figures/scop/
+!results/GSE234129/figures/scop/*.pdf
+!results/GSE234129/figures/scop/*.tif
+!results/GSE234129/tables/
+!results/GSE234129/tables/GSE234129_cluster_annotation.tsv
+!results/GSE234129/tables/GSE234129_leiden05_top20_markers.tsv
+!results/GSE234129/tables/GSE234129_leiden_cluster_counts.tsv
+!results/GSE234129/tables/GSE234129_classic_marker_scores.tsv
+!results/GSE234129/tables/GSE234129_leiden05_celltype_crosstab.tsv
+
+# Large local datasets
+Datasets/*/raw/
+Datasets/*/processed/

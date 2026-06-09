@@ -1,0 +1,60 @@
+# Reproducible environment for the Gastric Cancer Single-Cell Analysis project.
+#
+# Create with:
+#   micromamba env create -f environment.yml
+#   micromamba activate gastric-single-cell-analysis
+#
+# Notes:
+# - Raw and processed matrices are not stored in Git. Recreate local objects
+#   with the scripts under Datasets/GSE234129/scripts/.
+# - The core Scanpy workflow is fully covered by this conda environment.
+# - The R plotting workflow uses the GitHub package mengxu98/scop. After
+#   creating the environment, install scop from R with:
+#     install.packages("pak", repos = "https://cloud.r-project.org")
+#     pak::pak("mengxu98/scop")
+#   On macOS, install XQuartz first if cairo_pdf output fails:
+#     brew install --cask xquartz
+
+name: gastric-single-cell-analysis
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  # Python / Scanpy workflow
+  - python=3.11
+  - scanpy=1.11.5
+  - anndata=0.12.16
+  - numpy=2.1
+  - pandas=2.3
+  - scipy
+  - h5py
+  - matplotlib=3.10
+  - seaborn=0.13
+  - scikit-learn
+  - leidenalg=0.12
+  - python-igraph
+  - pip
+
+  # R / Seurat / plotting workflow
+  - r-base
+  - r-seurat
+  - r-seuratobject
+  - r-ggplot2
+  - r-patchwork
+  - r-cowplot
+  - r-dplyr
+  - r-remotes
+  - r-pak
+  - r-devtools
+
+  # System libraries useful for R package builds and PDF/TIF export
+  - cairo
+  - pango
+  - freetype
+  - libtiff
+  - gcc
+  - gxx
+  - gfortran
+
+  # Optional utilities
+  - rust
