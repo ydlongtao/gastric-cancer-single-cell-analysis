@@ -109,6 +109,34 @@ results/GSE234129/figures/scop/
 
 PNG files are preview-only and are not the preferred deliverable format.
 
+## scDesign3 Simulation Workflow
+
+The completed simulation uses the QC-filtered annotated object as input and
+generates four times as many synthetic cells using 200 HVG/marker features.
+
+Run:
+
+```bash
+Rscript scripts/R/05_gse234129_scdesign3_simulation.R \
+  --refresh-inputs \
+  --max-features=200 \
+  --n-cores=7 \
+  --mu-formula=global_annotation
+```
+
+Successful run:
+
+- Baseline cells: 19,144
+- Simulated cells: 76,576
+- Simulated genes/features: 200
+- Model formula: `global_annotation`
+- Runtime: 25 min 48 sec, from 2026-06-10 09:25:17 to 09:51:05
+- Report: `results/GSE234129/scdesign3/GSE234129_scdesign3_simulation_report.md`
+
+Large simulated `.rds` objects remain local and are not committed. The public
+repository keeps the reproducible scripts, report, summary tables, and PDF/TIF
+validation figures.
+
 ## Git/Data Policy
 
 - Do not commit raw matrices, processed `.h5ad`/`.rds` objects, local result objects, or large generated figures.

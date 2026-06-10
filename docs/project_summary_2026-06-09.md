@@ -120,3 +120,37 @@ QC 结果：
 - 根据 `GSE234129_cluster_annotation.tsv` 人工修订 cluster 注释。
 - 对 T/NK、髓系、B/Plasma 或 epithelial/tumor-related 细胞分别做二次重聚类。
 - 引入病历资料后做样本组间细胞比例和 marker 差异分析。
+
+## scDesign3 四倍模拟更新
+
+更新时间：2026-06-10
+
+新增脚本：
+
+- `scripts/python/export_gse234129_scdesign3_inputs.py`
+- `scripts/R/05_gse234129_scdesign3_simulation.R`
+
+最终成功配置：
+
+- 输入对象：`results/GSE234129/objects/GSE234129_annotated.h5ad`
+- 基准细胞数：19,144
+- 模拟细胞数：76,576
+- 特征基因数：200
+- 公式：`global_annotation`
+- R worker：7
+- 底层 BLAS/OMP 线程：1
+- 耗时：25 分 48 秒（2026-06-10 09:25:17 到 09:51:05）
+
+主要输出：
+
+- `results/GSE234129/scdesign3/objects/GSE234129_scdesign3_simulated_4x_200features_hvg_markers_counts.rds`
+- `results/GSE234129/scdesign3/objects/GSE234129_scdesign3_simulated_4x_200features_hvg_markers_sce.rds`
+- `results/GSE234129/scdesign3/objects/GSE234129_scdesign3_simulated_4x_200features_hvg_markers_seurat.rds`
+- `results/GSE234129/scdesign3/GSE234129_scdesign3_simulation_report.md`
+
+验证结果：
+
+- counts、SCE、Seurat 对象均为 `200 × 76576`
+- metadata 行数为 76,576
+- feature set 行数为 200
+- 4 倍模拟目标通过

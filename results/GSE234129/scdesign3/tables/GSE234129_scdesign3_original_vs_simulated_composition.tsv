@@ -1,0 +1,73 @@
+source	column	level	n_cells	fraction
+original_qc	sample	MDA_Pt1-Ad	126	0.00658169661512745
+original_qc	sample	MDA_Pt1-Ca	531	0.0277371500208943
+original_qc	sample	MDA_Pt2-As	1982	0.103531132469703
+original_qc	sample	MDA_Pt2-Ca	974	0.0508775595486837
+original_qc	sample	MDA_Pt2-PB	1595	0.0833159214375261
+original_qc	sample	MDA_Pt3-As	3110	0.16245298788132
+original_qc	sample	MDA_Pt3-Ca	1032	0.0539072294191392
+original_qc	sample	MDA_Pt4-As	620	0.0323861262014208
+original_qc	sample	MDA_Pt4-Ca	398	0.0207898035938153
+original_qc	sample	MDA_Pt5-Ad	494	0.0258044295862934
+original_qc	sample	MDA_Pt5-As	1692	0.0883827831174258
+original_qc	sample	MDA_Pt5-Ca	692	0.0361470956957794
+original_qc	sample	MDA_Pt5-Ov	1472	0.0768909318846636
+original_qc	sample	MDA_Pt5-PBMC	1614	0.0843083994985374
+original_qc	sample	MDA_Pt9-Ad	444	0.023192645215211
+original_qc	sample	MDA_Pt9-Ca	1266	0.0661303802758044
+original_qc	sample	MDA_Pt9-Li	1102	0.0575637275386544
+original_qc	global_annotation	B/Plasma | ref:B cell_C3	861	0.0449749268700376
+original_qc	global_annotation	B/Plasma | ref:pDCs	60	0.00313414124529879
+original_qc	global_annotation	B/Plasma | ref:Plasma_C0	1007	0.052601337233598
+original_qc	global_annotation	Endothelial/Fibroblast | ref:Endothelial_C0	174	0.00908900961136649
+original_qc	global_annotation	Endothelial/Fibroblast | ref:VSMC_C3	248	0.0129544504805683
+original_qc	global_annotation	Myeloid/TAM | ref:Classical Mono_C1	1652	0.08629335562056
+original_qc	global_annotation	Myeloid/TAM | ref:Mast	125	0.00652946092770581
+original_qc	global_annotation	Myeloid/TAM | ref:TAM_C0	1429	0.0746447973255328
+original_qc	global_annotation	Myeloid/TAM | ref:TAM_C3	730	0.0381320518178019
+original_qc	global_annotation	Myeloid/TAM | ref:TAM_C4	383	0.0200062682824906
+original_qc	global_annotation	T/NK | ref:CD4_C1	2995	0.156445883827831
+original_qc	global_annotation	T/NK | ref:CD4_C2	1788	0.0933974091099039
+original_qc	global_annotation	T/NK | ref:CD8_C0	2779	0.145162975344756
+original_qc	global_annotation	T/NK | ref:CD8_C1	1746	0.0912035102381947
+original_qc	global_annotation	T/NK | ref:CD8_C3	322	0.0168198913497702
+original_qc	global_annotation	T/NK | ref:DNT	266	0.013894692854158
+original_qc	global_annotation	T/NK | ref:NK_C1	756	0.0394901796907647
+original_qc	global_annotation	T/NK | ref:NK_C2	1279	0.0668094442122858
+original_qc	global_annotation	T/NK | ref:NK_C3	544	0.0284162139573757
+scdesign3_simulated	sample	MDA_Pt1-Ad	506	0.00660781445883828
+scdesign3_simulated	sample	MDA_Pt1-Ca	2069	0.0270189093188466
+scdesign3_simulated	sample	MDA_Pt2-As	7923	0.103465837860426
+scdesign3_simulated	sample	MDA_Pt2-Ca	3826	0.0499634350188048
+scdesign3_simulated	sample	MDA_Pt2-PB	6313	0.0824409736732135
+scdesign3_simulated	sample	MDA_Pt3-As	12518	0.163471583786043
+scdesign3_simulated	sample	MDA_Pt3-Ca	4142	0.0540900543251149
+scdesign3_simulated	sample	MDA_Pt4-As	2500	0.032647304638529
+scdesign3_simulated	sample	MDA_Pt4-Ca	1603	0.0209334517342248
+scdesign3_simulated	sample	MDA_Pt5-Ad	1986	0.0259350188048475
+scdesign3_simulated	sample	MDA_Pt5-As	6870	0.0897147931466778
+scdesign3_simulated	sample	MDA_Pt5-Ca	2750	0.0359120351023819
+scdesign3_simulated	sample	MDA_Pt5-Ov	5827	0.0760943376514835
+scdesign3_simulated	sample	MDA_Pt5-PBMC	6424	0.0838905139991642
+scdesign3_simulated	sample	MDA_Pt9-Ad	1839	0.024015357292102
+scdesign3_simulated	sample	MDA_Pt9-Ca	5086	0.0664176765566235
+scdesign3_simulated	sample	MDA_Pt9-Li	4394	0.0573809026326786
+scdesign3_simulated	global_annotation	B/Plasma | ref:B cell_C3	3423	0.044700689511074
+scdesign3_simulated	global_annotation	B/Plasma | ref:pDCs	260	0.00339531968240702
+scdesign3_simulated	global_annotation	B/Plasma | ref:Plasma_C0	4056	0.0529669870455495
+scdesign3_simulated	global_annotation	Endothelial/Fibroblast | ref:Endothelial_C0	649	0.00847524028416214
+scdesign3_simulated	global_annotation	Endothelial/Fibroblast | ref:VSMC_C3	974	0.0127193898871709
+scdesign3_simulated	global_annotation	Myeloid/TAM | ref:Classical Mono_C1	6550	0.0855359381529461
+scdesign3_simulated	global_annotation	Myeloid/TAM | ref:Mast	511	0.00667310906811534
+scdesign3_simulated	global_annotation	Myeloid/TAM | ref:TAM_C0	5782	0.07550668616799
+scdesign3_simulated	global_annotation	Myeloid/TAM | ref:TAM_C3	2862	0.037374634350188
+scdesign3_simulated	global_annotation	Myeloid/TAM | ref:TAM_C4	1556	0.0203196824070205
+scdesign3_simulated	global_annotation	T/NK | ref:CD4_C1	12018	0.156942122858337
+scdesign3_simulated	global_annotation	T/NK | ref:CD4_C2	7133	0.0931492895946511
+scdesign3_simulated	global_annotation	T/NK | ref:CD8_C0	11155	0.145672273297117
+scdesign3_simulated	global_annotation	T/NK | ref:CD8_C1	7012	0.0915691600501463
+scdesign3_simulated	global_annotation	T/NK | ref:CD8_C3	1343	0.0175381320518178
+scdesign3_simulated	global_annotation	T/NK | ref:DNT	1076	0.0140513999164229
+scdesign3_simulated	global_annotation	T/NK | ref:NK_C1	2987	0.0390069995821145
+scdesign3_simulated	global_annotation	T/NK | ref:NK_C2	5024	0.065608023401588
+scdesign3_simulated	global_annotation	T/NK | ref:NK_C3	2205	0.0287949226911826

@@ -1,0 +1,875 @@
+source	group	gene	mean_expression
+original_qc	B/Plasma | ref:B cell_C3	CD3D	0
+original_qc	B/Plasma | ref:pDCs	CD3D	0.0666666666666667
+original_qc	B/Plasma | ref:Plasma_C0	CD3D	0
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	CD3D	0.00574712643678159
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	CD3D	0
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	CD3D	0
+original_qc	Myeloid/TAM | ref:Mast	CD3D	0.04
+original_qc	Myeloid/TAM | ref:TAM_C0	CD3D	0
+original_qc	Myeloid/TAM | ref:TAM_C3	CD3D	0
+original_qc	Myeloid/TAM | ref:TAM_C4	CD3D	0
+original_qc	T/NK | ref:CD4_C1	CD3D	2.2347245409015
+original_qc	T/NK | ref:CD4_C2	CD3D	3.45581655480984
+original_qc	T/NK | ref:CD8_C0	CD3D	2.49658150413817
+original_qc	T/NK | ref:CD8_C1	CD3D	3.34077892325315
+original_qc	T/NK | ref:CD8_C3	CD3D	2.47826086956522
+original_qc	T/NK | ref:DNT	CD3D	4.67293233082707
+original_qc	T/NK | ref:NK_C1	CD3D	0.517195767195768
+original_qc	T/NK | ref:NK_C2	CD3D	0.767787333854575
+original_qc	T/NK | ref:NK_C3	CD3D	0.11764705882353
+original_qc	B/Plasma | ref:B cell_C3	CD3E	0
+original_qc	B/Plasma | ref:pDCs	CD3E	0.416666666666667
+original_qc	B/Plasma | ref:Plasma_C0	CD3E	0.0019860973187686
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	CD3E	0
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	CD3E	0
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	CD3E	0
+original_qc	Myeloid/TAM | ref:Mast	CD3E	0.104
+original_qc	Myeloid/TAM | ref:TAM_C0	CD3E	0
+original_qc	Myeloid/TAM | ref:TAM_C3	CD3E	0
+original_qc	Myeloid/TAM | ref:TAM_C4	CD3E	0.00522193211488249
+original_qc	T/NK | ref:CD4_C1	CD3E	5.01903171953255
+original_qc	T/NK | ref:CD4_C2	CD3E	5.03523489932886
+original_qc	T/NK | ref:CD8_C0	CD3E	4.91111910759267
+original_qc	T/NK | ref:CD8_C1	CD3E	4.95647193585338
+original_qc	T/NK | ref:CD8_C3	CD3E	5.27950310559006
+original_qc	T/NK | ref:DNT	CD3E	6.50375939849625
+original_qc	T/NK | ref:NK_C1	CD3E	1.53968253968254
+original_qc	T/NK | ref:NK_C2	CD3E	2.06958561376075
+original_qc	T/NK | ref:NK_C3	CD3E	1.01102941176471
+original_qc	B/Plasma | ref:B cell_C3	NKG7	0
+original_qc	B/Plasma | ref:pDCs	NKG7	0.95
+original_qc	B/Plasma | ref:Plasma_C0	NKG7	0.0059582919563058
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	NKG7	0.0172413793103448
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	NKG7	0.137096774193549
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	NKG7	0.122881355932203
+original_qc	Myeloid/TAM | ref:Mast	NKG7	0.216
+original_qc	Myeloid/TAM | ref:TAM_C0	NKG7	0.160251924422673
+original_qc	Myeloid/TAM | ref:TAM_C3	NKG7	0.280821917808219
+original_qc	Myeloid/TAM | ref:TAM_C4	NKG7	0.0339425587467363
+original_qc	T/NK | ref:CD4_C1	NKG7	0.179966611018365
+original_qc	T/NK | ref:CD4_C2	NKG7	0.310961968680089
+original_qc	T/NK | ref:CD8_C0	NKG7	9.5696293630803
+original_qc	T/NK | ref:CD8_C1	NKG7	8.33963344788089
+original_qc	T/NK | ref:CD8_C3	NKG7	0.288819875776398
+original_qc	T/NK | ref:DNT	NKG7	6.69924812030073
+original_qc	T/NK | ref:NK_C1	NKG7	26.3346560846561
+original_qc	T/NK | ref:NK_C2	NKG7	17.7443315089914
+original_qc	T/NK | ref:NK_C3	NKG7	17.0533088235294
+original_qc	B/Plasma | ref:B cell_C3	GNLY	0.00696864111498258
+original_qc	B/Plasma | ref:pDCs	GNLY	0.316666666666667
+original_qc	B/Plasma | ref:Plasma_C0	GNLY	0.0148957298907648
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	GNLY	0.0459770114942529
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	GNLY	0.104838709677419
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	GNLY	0.0145278450363197
+original_qc	Myeloid/TAM | ref:Mast	GNLY	0.08
+original_qc	Myeloid/TAM | ref:TAM_C0	GNLY	0.026592022393282
+original_qc	Myeloid/TAM | ref:TAM_C3	GNLY	0.108219178082192
+original_qc	Myeloid/TAM | ref:TAM_C4	GNLY	0.00522193211488249
+original_qc	T/NK | ref:CD4_C1	GNLY	0.113188647746245
+original_qc	T/NK | ref:CD4_C2	GNLY	0.302013422818794
+original_qc	T/NK | ref:CD8_C0	GNLY	2.49406261245051
+original_qc	T/NK | ref:CD8_C1	GNLY	4.21363115693013
+original_qc	T/NK | ref:CD8_C3	GNLY	0.0590062111801243
+original_qc	T/NK | ref:DNT	GNLY	3.31203007518797
+original_qc	T/NK | ref:NK_C1	GNLY	27.6732804232804
+original_qc	T/NK | ref:NK_C2	GNLY	17.7857701329164
+original_qc	T/NK | ref:NK_C3	GNLY	12.0735294117647
+original_qc	B/Plasma | ref:B cell_C3	CD8A	0
+original_qc	B/Plasma | ref:pDCs	CD8A	0.2
+original_qc	B/Plasma | ref:Plasma_C0	CD8A	0
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	CD8A	0
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	CD8A	0.00403225806451613
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	CD8A	0.0042372881355932
+original_qc	Myeloid/TAM | ref:Mast	CD8A	0.032
+original_qc	Myeloid/TAM | ref:TAM_C0	CD8A	0.00489853044086779
+original_qc	Myeloid/TAM | ref:TAM_C3	CD8A	0.00684931506849313
+original_qc	Myeloid/TAM | ref:TAM_C4	CD8A	0.00261096605744124
+original_qc	T/NK | ref:CD4_C1	CD8A	0.0550918196994996
+original_qc	T/NK | ref:CD4_C2	CD8A	0.0961968680089489
+original_qc	T/NK | ref:CD8_C0	CD8A	3.33285354444044
+original_qc	T/NK | ref:CD8_C1	CD8A	3.90378006872853
+original_qc	T/NK | ref:CD8_C3	CD8A	2.95341614906832
+original_qc	T/NK | ref:DNT	CD8A	2.54511278195489
+original_qc	T/NK | ref:NK_C1	CD8A	0.415343915343916
+original_qc	T/NK | ref:NK_C2	CD8A	0.776387802971071
+original_qc	T/NK | ref:NK_C3	CD8A	0.143382352941177
+original_qc	B/Plasma | ref:B cell_C3	IL7R	0
+original_qc	B/Plasma | ref:pDCs	IL7R	0.0666666666666667
+original_qc	B/Plasma | ref:Plasma_C0	IL7R	0
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	IL7R	0.00574712643678159
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	IL7R	0.233870967741936
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	IL7R	0.0193704600484261
+original_qc	Myeloid/TAM | ref:Mast	IL7R	0.016
+original_qc	Myeloid/TAM | ref:TAM_C0	IL7R	0.208537438768369
+original_qc	Myeloid/TAM | ref:TAM_C3	IL7R	0.939726027397256
+original_qc	Myeloid/TAM | ref:TAM_C4	IL7R	0.0757180156657967
+original_qc	T/NK | ref:CD4_C1	IL7R	4.74290484140231
+original_qc	T/NK | ref:CD4_C2	IL7R	3.89261744966442
+original_qc	T/NK | ref:CD8_C0	IL7R	1.80064771500538
+original_qc	T/NK | ref:CD8_C1	IL7R	1.36769759450172
+original_qc	T/NK | ref:CD8_C3	IL7R	3.35093167701864
+original_qc	T/NK | ref:DNT	IL7R	0.515037593984962
+original_qc	T/NK | ref:NK_C1	IL7R	0.0714285714285715
+original_qc	T/NK | ref:NK_C2	IL7R	0.326817826426895
+original_qc	T/NK | ref:NK_C3	IL7R	0.391544117647059
+original_qc	B/Plasma | ref:B cell_C3	MS4A1	5.24506387921023
+original_qc	B/Plasma | ref:pDCs	MS4A1	0
+original_qc	B/Plasma | ref:Plasma_C0	MS4A1	0.0407149950347569
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	MS4A1	0
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	MS4A1	0
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	MS4A1	0
+original_qc	Myeloid/TAM | ref:Mast	MS4A1	0
+original_qc	Myeloid/TAM | ref:TAM_C0	MS4A1	0
+original_qc	Myeloid/TAM | ref:TAM_C3	MS4A1	0
+original_qc	Myeloid/TAM | ref:TAM_C4	MS4A1	0.255874673629244
+original_qc	T/NK | ref:CD4_C1	MS4A1	0
+original_qc	T/NK | ref:CD4_C2	MS4A1	0
+original_qc	T/NK | ref:CD8_C0	MS4A1	0.000359841669665372
+original_qc	T/NK | ref:CD8_C1	MS4A1	0
+original_qc	T/NK | ref:CD8_C3	MS4A1	0
+original_qc	T/NK | ref:DNT	MS4A1	0
+original_qc	T/NK | ref:NK_C1	MS4A1	0
+original_qc	T/NK | ref:NK_C2	MS4A1	0
+original_qc	T/NK | ref:NK_C3	MS4A1	0
+original_qc	B/Plasma | ref:B cell_C3	CD79A	5.84785133565621
+original_qc	B/Plasma | ref:pDCs	CD79A	0.1
+original_qc	B/Plasma | ref:Plasma_C0	CD79A	10.9910625620655
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	CD79A	0
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	CD79A	0
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	CD79A	0
+original_qc	Myeloid/TAM | ref:Mast	CD79A	0.032
+original_qc	Myeloid/TAM | ref:TAM_C0	CD79A	0
+original_qc	Myeloid/TAM | ref:TAM_C3	CD79A	0
+original_qc	Myeloid/TAM | ref:TAM_C4	CD79A	0.208877284595299
+original_qc	T/NK | ref:CD4_C1	CD79A	0
+original_qc	T/NK | ref:CD4_C2	CD79A	0
+original_qc	T/NK | ref:CD8_C0	CD79A	0
+original_qc	T/NK | ref:CD8_C1	CD79A	0.0011454753722795
+original_qc	T/NK | ref:CD8_C3	CD79A	0
+original_qc	T/NK | ref:DNT	CD79A	0.018796992481203
+original_qc	T/NK | ref:NK_C1	CD79A	0
+original_qc	T/NK | ref:NK_C2	CD79A	0
+original_qc	T/NK | ref:NK_C3	CD79A	0
+original_qc	B/Plasma | ref:B cell_C3	MZB1	0.175377468060395
+original_qc	B/Plasma | ref:pDCs	MZB1	3.75
+original_qc	B/Plasma | ref:Plasma_C0	MZB1	26.1122144985104
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	MZB1	0
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	MZB1	0
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	MZB1	0.00121065375302666
+original_qc	Myeloid/TAM | ref:Mast	MZB1	0.048
+original_qc	Myeloid/TAM | ref:TAM_C0	MZB1	0.0041987403778866
+original_qc	Myeloid/TAM | ref:TAM_C3	MZB1	0.0178082191780821
+original_qc	Myeloid/TAM | ref:TAM_C4	MZB1	0.0365535248041776
+original_qc	T/NK | ref:CD4_C1	MZB1	0.00901502504173616
+original_qc	T/NK | ref:CD4_C2	MZB1	0.0570469798657717
+original_qc	T/NK | ref:CD8_C0	MZB1	0.0190716084922635
+original_qc	T/NK | ref:CD8_C1	MZB1	0.080183276059565
+original_qc	T/NK | ref:CD8_C3	MZB1	0
+original_qc	T/NK | ref:DNT	MZB1	0.116541353383459
+original_qc	T/NK | ref:NK_C1	MZB1	0.00529100529100524
+original_qc	T/NK | ref:NK_C2	MZB1	0.0351837372947615
+original_qc	T/NK | ref:NK_C3	MZB1	0.03125
+original_qc	B/Plasma | ref:B cell_C3	JCHAIN	0.806039488966317
+original_qc	B/Plasma | ref:pDCs	JCHAIN	15.5666666666667
+original_qc	B/Plasma | ref:Plasma_C0	JCHAIN	515.921549155909
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	JCHAIN	0.0689655172413793
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	JCHAIN	0.104838709677419
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	JCHAIN	0.0127118644067797
+original_qc	Myeloid/TAM | ref:Mast	JCHAIN	0.288
+original_qc	Myeloid/TAM | ref:TAM_C0	JCHAIN	0.0181945416375088
+original_qc	Myeloid/TAM | ref:TAM_C3	JCHAIN	0.0547945205479451
+original_qc	Myeloid/TAM | ref:TAM_C4	JCHAIN	0.386422976501305
+original_qc	T/NK | ref:CD4_C1	JCHAIN	0.00701168614357266
+original_qc	T/NK | ref:CD4_C2	JCHAIN	0.0906040268456376
+original_qc	T/NK | ref:CD8_C0	JCHAIN	0.00683699172364154
+original_qc	T/NK | ref:CD8_C1	JCHAIN	0.149484536082476
+original_qc	T/NK | ref:CD8_C3	JCHAIN	0.00621118012422359
+original_qc	T/NK | ref:DNT	JCHAIN	0.0601503759398496
+original_qc	T/NK | ref:NK_C1	JCHAIN	0.00925925925925925
+original_qc	T/NK | ref:NK_C2	JCHAIN	0.0281469898358091
+original_qc	T/NK | ref:NK_C3	JCHAIN	0
+original_qc	B/Plasma | ref:B cell_C3	LYZ	0.0360046457607434
+original_qc	B/Plasma | ref:pDCs	LYZ	0.05
+original_qc	B/Plasma | ref:Plasma_C0	LYZ	0.0327706057596822
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	LYZ	0.0229885057471265
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	LYZ	0.0362903225806453
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	LYZ	20.5690072639224
+original_qc	Myeloid/TAM | ref:Mast	LYZ	0.04
+original_qc	Myeloid/TAM | ref:TAM_C0	LYZ	11.1938418474458
+original_qc	Myeloid/TAM | ref:TAM_C3	LYZ	23.0315068493151
+original_qc	Myeloid/TAM | ref:TAM_C4	LYZ	3.18798955613577
+original_qc	T/NK | ref:CD4_C1	LYZ	0.0323873121869782
+original_qc	T/NK | ref:CD4_C2	LYZ	0.0195749440715883
+original_qc	T/NK | ref:CD8_C0	LYZ	0.0255487585462396
+original_qc	T/NK | ref:CD8_C1	LYZ	0.016036655211913
+original_qc	T/NK | ref:CD8_C3	LYZ	0.0465838509316769
+original_qc	T/NK | ref:DNT	LYZ	0.0225563909774436
+original_qc	T/NK | ref:NK_C1	LYZ	0.0317460317460318
+original_qc	T/NK | ref:NK_C2	LYZ	0.0218921032056295
+original_qc	T/NK | ref:NK_C3	LYZ	0.0275735294117648
+original_qc	B/Plasma | ref:B cell_C3	LST1	0.0615563298490127
+original_qc	B/Plasma | ref:pDCs	LST1	0.683333333333333
+original_qc	B/Plasma | ref:Plasma_C0	LST1	0.000993048659384302
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	LST1	0.0057471264367816
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	LST1	0.0161290322580645
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	LST1	5.53874092009685
+original_qc	Myeloid/TAM | ref:Mast	LST1	0.144
+original_qc	Myeloid/TAM | ref:TAM_C0	LST1	5.02799160251924
+original_qc	Myeloid/TAM | ref:TAM_C3	LST1	7.97397260273974
+original_qc	Myeloid/TAM | ref:TAM_C4	LST1	0.637075718015666
+original_qc	T/NK | ref:CD4_C1	LST1	0.108180300500835
+original_qc	T/NK | ref:CD4_C2	LST1	0.0799776286353469
+original_qc	T/NK | ref:CD8_C0	LST1	0.0780856423173791
+original_qc	T/NK | ref:CD8_C1	LST1	0.0601374570446735
+original_qc	T/NK | ref:CD8_C3	LST1	0.0931677018633539
+original_qc	T/NK | ref:DNT	LST1	0.165413533834587
+original_qc	T/NK | ref:NK_C1	LST1	0.0277777777777778
+original_qc	T/NK | ref:NK_C2	LST1	0.0156372165754496
+original_qc	T/NK | ref:NK_C3	LST1	0.03125
+original_qc	B/Plasma | ref:B cell_C3	CST3	0.0127758420441347
+original_qc	B/Plasma | ref:pDCs	CST3	20.9166666666667
+original_qc	B/Plasma | ref:Plasma_C0	CST3	0.153922542204568
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	CST3	4.07471264367816
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	CST3	11.633064516129
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	CST3	63.5423728813559
+original_qc	Myeloid/TAM | ref:Mast	CST3	4.088
+original_qc	Myeloid/TAM | ref:TAM_C0	CST3	44.1875437368789
+original_qc	Myeloid/TAM | ref:TAM_C3	CST3	50.535616438356
+original_qc	Myeloid/TAM | ref:TAM_C4	CST3	4.63446475195823
+original_qc	T/NK | ref:CD4_C1	CST3	0.0420701168614361
+original_qc	T/NK | ref:CD4_C2	CST3	0.0234899328859058
+original_qc	T/NK | ref:CD8_C0	CST3	0.0676502338970853
+original_qc	T/NK | ref:CD8_C1	CST3	0.0395189003436427
+original_qc	T/NK | ref:CD8_C3	CST3	0.0527950310559006
+original_qc	T/NK | ref:DNT	CST3	0.037593984962406
+original_qc	T/NK | ref:NK_C1	CST3	0.078042328042328
+original_qc	T/NK | ref:NK_C2	CST3	0.0766223612197029
+original_qc	T/NK | ref:NK_C3	CST3	0.176470588235294
+original_qc	B/Plasma | ref:B cell_C3	CD68	0.0766550522648084
+original_qc	B/Plasma | ref:pDCs	CD68	4.13333333333333
+original_qc	B/Plasma | ref:Plasma_C0	CD68	0.0814299900695135
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	CD68	0.0172413793103448
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	CD68	0.145161290322581
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	CD68	4.72094430992735
+original_qc	Myeloid/TAM | ref:Mast	CD68	0.544
+original_qc	Myeloid/TAM | ref:TAM_C0	CD68	18.6787963610917
+original_qc	Myeloid/TAM | ref:TAM_C3	CD68	4.60958904109589
+original_qc	Myeloid/TAM | ref:TAM_C4	CD68	2.01044386422977
+original_qc	T/NK | ref:CD4_C1	CD68	0.0223706176961603
+original_qc	T/NK | ref:CD4_C2	CD68	0.0111856823266219
+original_qc	T/NK | ref:CD8_C0	CD68	0.0248290752069088
+original_qc	T/NK | ref:CD8_C1	CD68	0.0171821305841925
+original_qc	T/NK | ref:CD8_C3	CD68	0.00931677018633538
+original_qc	T/NK | ref:DNT	CD68	0.0451127819548873
+original_qc	T/NK | ref:NK_C1	CD68	0.0145502645502645
+original_qc	T/NK | ref:NK_C2	CD68	0.0101641907740422
+original_qc	T/NK | ref:NK_C3	CD68	0.0238970588235294
+original_qc	B/Plasma | ref:B cell_C3	MRC1	0
+original_qc	B/Plasma | ref:pDCs	MRC1	0.05
+original_qc	B/Plasma | ref:Plasma_C0	MRC1	0.000993048659384302
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	MRC1	0.304597701149425
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	MRC1	0
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	MRC1	0.729418886198542
+original_qc	Myeloid/TAM | ref:Mast	MRC1	0
+original_qc	Myeloid/TAM | ref:TAM_C0	MRC1	0.750174947515745
+original_qc	Myeloid/TAM | ref:TAM_C3	MRC1	0.231506849315069
+original_qc	Myeloid/TAM | ref:TAM_C4	MRC1	0.0496083550913839
+original_qc	T/NK | ref:CD4_C1	MRC1	0.00100166944908181
+original_qc	T/NK | ref:CD4_C2	MRC1	0.00838926174496651
+original_qc	T/NK | ref:CD8_C0	MRC1	0.00179920834832675
+original_qc	T/NK | ref:CD8_C1	MRC1	0.00057273768613975
+original_qc	T/NK | ref:CD8_C3	MRC1	0
+original_qc	T/NK | ref:DNT	MRC1	0.00375939849624059
+original_qc	T/NK | ref:NK_C1	MRC1	0
+original_qc	T/NK | ref:NK_C2	MRC1	0.00078186082877248
+original_qc	T/NK | ref:NK_C3	MRC1	0
+original_qc	B/Plasma | ref:B cell_C3	EPCAM	0
+original_qc	B/Plasma | ref:pDCs	EPCAM	0
+original_qc	B/Plasma | ref:Plasma_C0	EPCAM	0
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	EPCAM	0
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	EPCAM	0
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	EPCAM	0
+original_qc	Myeloid/TAM | ref:Mast	EPCAM	0.00799999999999999
+original_qc	Myeloid/TAM | ref:TAM_C0	EPCAM	0
+original_qc	Myeloid/TAM | ref:TAM_C3	EPCAM	0
+original_qc	Myeloid/TAM | ref:TAM_C4	EPCAM	0
+original_qc	T/NK | ref:CD4_C1	EPCAM	0
+original_qc	T/NK | ref:CD4_C2	EPCAM	0
+original_qc	T/NK | ref:CD8_C0	EPCAM	0
+original_qc	T/NK | ref:CD8_C1	EPCAM	0
+original_qc	T/NK | ref:CD8_C3	EPCAM	0
+original_qc	T/NK | ref:DNT	EPCAM	0
+original_qc	T/NK | ref:NK_C1	EPCAM	0
+original_qc	T/NK | ref:NK_C2	EPCAM	0
+original_qc	T/NK | ref:NK_C3	EPCAM	0
+original_qc	B/Plasma | ref:B cell_C3	KRT8	0.0313588850174214
+original_qc	B/Plasma | ref:pDCs	KRT8	0.0666666666666667
+original_qc	B/Plasma | ref:Plasma_C0	KRT8	0.0456802383316782
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	KRT8	1.14367816091954
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	KRT8	1.71370967741935
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	KRT8	0.0145278450363196
+original_qc	Myeloid/TAM | ref:Mast	KRT8	0.008
+original_qc	Myeloid/TAM | ref:TAM_C0	KRT8	0.0384884534639603
+original_qc	Myeloid/TAM | ref:TAM_C3	KRT8	0.0315068493150685
+original_qc	Myeloid/TAM | ref:TAM_C4	KRT8	0.0287206266318538
+original_qc	T/NK | ref:CD4_C1	KRT8	0.0103505843071784
+original_qc	T/NK | ref:CD4_C2	KRT8	0.0296420581655482
+original_qc	T/NK | ref:CD8_C0	KRT8	0.0154731917956097
+original_qc	T/NK | ref:CD8_C1	KRT8	0.041237113402062
+original_qc	T/NK | ref:CD8_C3	KRT8	0
+original_qc	T/NK | ref:DNT	KRT8	0.0263157894736842
+original_qc	T/NK | ref:NK_C1	KRT8	0.00529100529100535
+original_qc	T/NK | ref:NK_C2	KRT8	0.0250195465207192
+original_qc	T/NK | ref:NK_C3	KRT8	0.00367647058823531
+original_qc	B/Plasma | ref:B cell_C3	KRT18	0.0313588850174215
+original_qc	B/Plasma | ref:pDCs	KRT18	0
+original_qc	B/Plasma | ref:Plasma_C0	KRT18	0.0824230387288977
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	KRT18	0.810344827586207
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	KRT18	2.37096774193548
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	KRT18	0.0108958837772399
+original_qc	Myeloid/TAM | ref:Mast	KRT18	0.008
+original_qc	Myeloid/TAM | ref:TAM_C0	KRT18	0.0384884534639601
+original_qc	Myeloid/TAM | ref:TAM_C3	KRT18	0.0123287671232877
+original_qc	Myeloid/TAM | ref:TAM_C4	KRT18	0.0287206266318538
+original_qc	T/NK | ref:CD4_C1	KRT18	0.0377295492487477
+original_qc	T/NK | ref:CD4_C2	KRT18	0.0335570469798659
+original_qc	T/NK | ref:CD8_C0	KRT18	0.014393666786614
+original_qc	T/NK | ref:CD8_C1	KRT18	0.04581901489118
+original_qc	T/NK | ref:CD8_C3	KRT18	0.0341614906832297
+original_qc	T/NK | ref:DNT	KRT18	0.0225563909774436
+original_qc	T/NK | ref:NK_C1	KRT18	0.00793650793650796
+original_qc	T/NK | ref:NK_C2	KRT18	0.014855355746677
+original_qc	T/NK | ref:NK_C3	KRT18	0.00735294117647061
+original_qc	B/Plasma | ref:B cell_C3	KRT19	0.0336817653890822
+original_qc	B/Plasma | ref:pDCs	KRT19	0
+original_qc	B/Plasma | ref:Plasma_C0	KRT19	0.028798411122145
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	KRT19	0.5
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	KRT19	1.41532258064516
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	KRT19	0.00121065375302664
+original_qc	Myeloid/TAM | ref:Mast	KRT19	0.28
+original_qc	Myeloid/TAM | ref:TAM_C0	KRT19	0.0356892932120361
+original_qc	Myeloid/TAM | ref:TAM_C3	KRT19	0.0287671232876712
+original_qc	Myeloid/TAM | ref:TAM_C4	KRT19	0.0469973890339426
+original_qc	T/NK | ref:CD4_C1	KRT19	0.00534223706176957
+original_qc	T/NK | ref:CD4_C2	KRT19	0.064876957494408
+original_qc	T/NK | ref:CD8_C0	KRT19	0.00431810003598418
+original_qc	T/NK | ref:CD8_C1	KRT19	0.0693012600229086
+original_qc	T/NK | ref:CD8_C3	KRT19	0.00310559006211182
+original_qc	T/NK | ref:DNT	KRT19	0.0526315789473684
+original_qc	T/NK | ref:NK_C1	KRT19	0.00529100529100535
+original_qc	T/NK | ref:NK_C2	KRT19	0.0437842064112583
+original_qc	T/NK | ref:NK_C3	KRT19	0.00367647058823531
+original_qc	B/Plasma | ref:B cell_C3	PECAM1	0.0615563298490127
+original_qc	B/Plasma | ref:pDCs	PECAM1	0.933333333333333
+original_qc	B/Plasma | ref:Plasma_C0	PECAM1	0.711022840119166
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	PECAM1	12.5919540229885
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	PECAM1	0.0645161290322581
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	PECAM1	0.851089588377724
+original_qc	Myeloid/TAM | ref:Mast	PECAM1	0.072
+original_qc	Myeloid/TAM | ref:TAM_C0	PECAM1	1.08467459762072
+original_qc	Myeloid/TAM | ref:TAM_C3	PECAM1	1.93561643835616
+original_qc	Myeloid/TAM | ref:TAM_C4	PECAM1	0.0574412532637075
+original_qc	T/NK | ref:CD4_C1	PECAM1	0.0540901502504177
+original_qc	T/NK | ref:CD4_C2	PECAM1	0.0184563758389261
+original_qc	T/NK | ref:CD8_C0	PECAM1	0.265563152213027
+original_qc	T/NK | ref:CD8_C1	PECAM1	0.264032073310423
+original_qc	T/NK | ref:CD8_C3	PECAM1	0.394409937888199
+original_qc	T/NK | ref:DNT	PECAM1	0.300751879699248
+original_qc	T/NK | ref:NK_C1	PECAM1	0.125661375661376
+original_qc	T/NK | ref:NK_C2	PECAM1	0.105551211884285
+original_qc	T/NK | ref:NK_C3	PECAM1	0.24264705882353
+original_qc	B/Plasma | ref:B cell_C3	VWF	0
+original_qc	B/Plasma | ref:pDCs	VWF	0
+original_qc	B/Plasma | ref:Plasma_C0	VWF	0.0009930486593843
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	VWF	20.8965517241379
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	VWF	0.258064516129032
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	VWF	0
+original_qc	Myeloid/TAM | ref:Mast	VWF	0.00799999999999999
+original_qc	Myeloid/TAM | ref:TAM_C0	VWF	0
+original_qc	Myeloid/TAM | ref:TAM_C3	VWF	0
+original_qc	Myeloid/TAM | ref:TAM_C4	VWF	0
+original_qc	T/NK | ref:CD4_C1	VWF	0
+original_qc	T/NK | ref:CD4_C2	VWF	0
+original_qc	T/NK | ref:CD8_C0	VWF	0
+original_qc	T/NK | ref:CD8_C1	VWF	0
+original_qc	T/NK | ref:CD8_C3	VWF	0
+original_qc	T/NK | ref:DNT	VWF	0
+original_qc	T/NK | ref:NK_C1	VWF	0
+original_qc	T/NK | ref:NK_C2	VWF	0
+original_qc	T/NK | ref:NK_C3	VWF	0
+original_qc	B/Plasma | ref:B cell_C3	COL1A1	0
+original_qc	B/Plasma | ref:pDCs	COL1A1	0.0166666666666666
+original_qc	B/Plasma | ref:Plasma_C0	COL1A1	0
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	COL1A1	0.316091954022989
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	COL1A1	67.0806451612904
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	COL1A1	0
+original_qc	Myeloid/TAM | ref:Mast	COL1A1	0.00799999999999999
+original_qc	Myeloid/TAM | ref:TAM_C0	COL1A1	0
+original_qc	Myeloid/TAM | ref:TAM_C3	COL1A1	0
+original_qc	Myeloid/TAM | ref:TAM_C4	COL1A1	0
+original_qc	T/NK | ref:CD4_C1	COL1A1	0
+original_qc	T/NK | ref:CD4_C2	COL1A1	0
+original_qc	T/NK | ref:CD8_C0	COL1A1	0
+original_qc	T/NK | ref:CD8_C1	COL1A1	0
+original_qc	T/NK | ref:CD8_C3	COL1A1	0
+original_qc	T/NK | ref:DNT	COL1A1	0
+original_qc	T/NK | ref:NK_C1	COL1A1	0
+original_qc	T/NK | ref:NK_C2	COL1A1	0
+original_qc	T/NK | ref:NK_C3	COL1A1	0
+original_qc	B/Plasma | ref:B cell_C3	DCN	0.00116144018583044
+original_qc	B/Plasma | ref:pDCs	DCN	0
+original_qc	B/Plasma | ref:Plasma_C0	DCN	0
+original_qc	Endothelial/Fibroblast | ref:Endothelial_C0	DCN	0.0804597701149425
+original_qc	Endothelial/Fibroblast | ref:VSMC_C3	DCN	13.883064516129
+original_qc	Myeloid/TAM | ref:Classical Mono_C1	DCN	0
+original_qc	Myeloid/TAM | ref:Mast	DCN	0
+original_qc	Myeloid/TAM | ref:TAM_C0	DCN	0
+original_qc	Myeloid/TAM | ref:TAM_C3	DCN	0
+original_qc	Myeloid/TAM | ref:TAM_C4	DCN	0
+original_qc	T/NK | ref:CD4_C1	DCN	0
+original_qc	T/NK | ref:CD4_C2	DCN	0.00055928411633109
+original_qc	T/NK | ref:CD8_C0	DCN	0.000359841669665345
+original_qc	T/NK | ref:CD8_C1	DCN	0.0011454753722795
+original_qc	T/NK | ref:CD8_C3	DCN	0
+original_qc	T/NK | ref:DNT	DCN	0
+original_qc	T/NK | ref:NK_C1	DCN	0
+original_qc	T/NK | ref:NK_C2	DCN	0.00156372165754496
+original_qc	T/NK | ref:NK_C3	DCN	0
+scdesign3_simulated	B/Plasma | ref:B cell_C3	CD3D	0
+scdesign3_simulated	B/Plasma | ref:pDCs	CD3D	0.0807692307692308
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	CD3D	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	CD3D	0.0107858243451464
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	CD3D	0
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	CD3D	0
+scdesign3_simulated	Myeloid/TAM | ref:Mast	CD3D	0.0430528375733855
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	CD3D	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	CD3D	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	CD3D	0
+scdesign3_simulated	T/NK | ref:CD4_C1	CD3D	2.26501913795973
+scdesign3_simulated	T/NK | ref:CD4_C2	CD3D	3.48478900883219
+scdesign3_simulated	T/NK | ref:CD8_C0	CD3D	2.51134020618557
+scdesign3_simulated	T/NK | ref:CD8_C1	CD3D	3.37478608100399
+scdesign3_simulated	T/NK | ref:CD8_C3	CD3D	2.45048399106478
+scdesign3_simulated	T/NK | ref:DNT	CD3D	4.71282527881041
+scdesign3_simulated	T/NK | ref:NK_C1	CD3D	0.504184800803482
+scdesign3_simulated	T/NK | ref:NK_C2	CD3D	0.757364649681529
+scdesign3_simulated	T/NK | ref:NK_C3	CD3D	0.121541950113379
+scdesign3_simulated	B/Plasma | ref:B cell_C3	CD3E	0
+scdesign3_simulated	B/Plasma | ref:pDCs	CD3E	0.476923076923077
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	CD3E	0.00197238658777121
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	CD3E	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	CD3E	0
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	CD3E	0
+scdesign3_simulated	Myeloid/TAM | ref:Mast	CD3E	0.0978473581213308
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	CD3E	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	CD3E	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	CD3E	0.00449871465295632
+scdesign3_simulated	T/NK | ref:CD4_C1	CD3E	5.05633216841405
+scdesign3_simulated	T/NK | ref:CD4_C2	CD3E	4.98275620356091
+scdesign3_simulated	T/NK | ref:CD8_C0	CD3E	4.95428059166293
+scdesign3_simulated	T/NK | ref:CD8_C1	CD3E	4.91357672561323
+scdesign3_simulated	T/NK | ref:CD8_C3	CD3E	5.25167535368578
+scdesign3_simulated	T/NK | ref:DNT	CD3E	6.53810408921933
+scdesign3_simulated	T/NK | ref:NK_C1	CD3E	1.55875460328088
+scdesign3_simulated	T/NK | ref:NK_C2	CD3E	2.06190286624204
+scdesign3_simulated	T/NK | ref:NK_C3	CD3E	0.991383219954648
+scdesign3_simulated	B/Plasma | ref:B cell_C3	NKG7	0
+scdesign3_simulated	B/Plasma | ref:pDCs	NKG7	1.08461538461538
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	NKG7	0.00739644970414194
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	NKG7	0.012326656394453
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	NKG7	0.158110882956879
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	NKG7	0.11618320610687
+scdesign3_simulated	Myeloid/TAM | ref:Mast	NKG7	0.178082191780822
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	NKG7	0.159633344863369
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	NKG7	0.281271837875612
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	NKG7	0.0334190231362467
+scdesign3_simulated	T/NK | ref:CD4_C1	NKG7	0.177234148776836
+scdesign3_simulated	T/NK | ref:CD4_C2	NKG7	0.313893172578158
+scdesign3_simulated	T/NK | ref:CD8_C0	NKG7	9.61057821604661
+scdesign3_simulated	T/NK | ref:CD8_C1	NKG7	8.39018824871649
+scdesign3_simulated	T/NK | ref:CD8_C3	NKG7	0.2933730454207
+scdesign3_simulated	T/NK | ref:DNT	NKG7	6.59386617100372
+scdesign3_simulated	T/NK | ref:NK_C1	NKG7	25.8962169400737
+scdesign3_simulated	T/NK | ref:NK_C2	NKG7	17.2866242038217
+scdesign3_simulated	T/NK | ref:NK_C3	NKG7	16.8004535147392
+scdesign3_simulated	B/Plasma | ref:B cell_C3	GNLY	0.00934852468594796
+scdesign3_simulated	B/Plasma | ref:pDCs	GNLY	0.307692307692308
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	GNLY	0.0165187376725838
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	GNLY	0.0631741140215716
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	GNLY	0.109856262833676
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	GNLY	0.0170992366412213
+scdesign3_simulated	Myeloid/TAM | ref:Mast	GNLY	0.0528375733855186
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	GNLY	0.0249048772051193
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	GNLY	0.107617051013277
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	GNLY	0.00385604113110538
+scdesign3_simulated	T/NK | ref:CD4_C1	GNLY	0.117157596937926
+scdesign3_simulated	T/NK | ref:CD4_C2	GNLY	0.310949109771484
+scdesign3_simulated	T/NK | ref:CD8_C0	GNLY	2.54791573285522
+scdesign3_simulated	T/NK | ref:CD8_C1	GNLY	4.08086138049059
+scdesign3_simulated	T/NK | ref:CD8_C3	GNLY	0.0454206999255399
+scdesign3_simulated	T/NK | ref:DNT	GNLY	3.29925650557621
+scdesign3_simulated	T/NK | ref:NK_C1	GNLY	27.0441914964847
+scdesign3_simulated	T/NK | ref:NK_C2	GNLY	16.7766719745223
+scdesign3_simulated	T/NK | ref:NK_C3	GNLY	12.3641723356009
+scdesign3_simulated	B/Plasma | ref:B cell_C3	CD8A	0
+scdesign3_simulated	B/Plasma | ref:pDCs	CD8A	0.2
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	CD8A	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	CD8A	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	CD8A	0.00513347022587267
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	CD8A	0.00366412213740457
+scdesign3_simulated	Myeloid/TAM | ref:Mast	CD8A	0.0273972602739726
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	CD8A	0.00536146662054657
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	CD8A	0.00733752620545074
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	CD8A	0.00257069408740364
+scdesign3_simulated	T/NK | ref:CD4_C1	CD8A	0.0564985854551499
+scdesign3_simulated	T/NK | ref:CD4_C2	CD8A	0.0936492359456047
+scdesign3_simulated	T/NK | ref:CD8_C0	CD8A	3.35284625728373
+scdesign3_simulated	T/NK | ref:CD8_C1	CD8A	3.85539075869937
+scdesign3_simulated	T/NK | ref:CD8_C3	CD8A	2.97393894266567
+scdesign3_simulated	T/NK | ref:DNT	CD8A	2.48884758364312
+scdesign3_simulated	T/NK | ref:NK_C1	CD8A	0.427519250083696
+scdesign3_simulated	T/NK | ref:NK_C2	CD8A	0.770899681528664
+scdesign3_simulated	T/NK | ref:NK_C3	CD8A	0.151473922902494
+scdesign3_simulated	B/Plasma | ref:B cell_C3	IL7R	0
+scdesign3_simulated	B/Plasma | ref:pDCs	IL7R	0.0846153846153846
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	IL7R	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	IL7R	0.0107858243451464
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	IL7R	0.240246406570842
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	IL7R	0.0183206106870229
+scdesign3_simulated	Myeloid/TAM | ref:Mast	IL7R	0.025440313111546
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	IL7R	0.202179176755448
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	IL7R	0.93151642208246
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	IL7R	0.0848329048843187
+scdesign3_simulated	T/NK | ref:CD4_C1	IL7R	4.78798468963222
+scdesign3_simulated	T/NK | ref:CD4_C2	IL7R	3.70755642787045
+scdesign3_simulated	T/NK | ref:CD8_C0	IL7R	1.81990138951143
+scdesign3_simulated	T/NK | ref:CD8_C1	IL7R	1.37150598973189
+scdesign3_simulated	T/NK | ref:CD8_C3	IL7R	3.32613551749814
+scdesign3_simulated	T/NK | ref:DNT	IL7R	0.552973977695167
+scdesign3_simulated	T/NK | ref:NK_C1	IL7R	0.0736524941412788
+scdesign3_simulated	T/NK | ref:NK_C2	IL7R	0.329816878980891
+scdesign3_simulated	T/NK | ref:NK_C3	IL7R	0.382312925170068
+scdesign3_simulated	B/Plasma | ref:B cell_C3	MS4A1	5.20975752264096
+scdesign3_simulated	B/Plasma | ref:pDCs	MS4A1	0
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	MS4A1	0.0431459566074951
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	MS4A1	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	MS4A1	0
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	MS4A1	0
+scdesign3_simulated	Myeloid/TAM | ref:Mast	MS4A1	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	MS4A1	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	MS4A1	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	MS4A1	0.263496143958869
+scdesign3_simulated	T/NK | ref:CD4_C1	MS4A1	0
+scdesign3_simulated	T/NK | ref:CD4_C2	MS4A1	0
+scdesign3_simulated	T/NK | ref:CD8_C0	MS4A1	0.000179291797400272
+scdesign3_simulated	T/NK | ref:CD8_C1	MS4A1	0
+scdesign3_simulated	T/NK | ref:CD8_C3	MS4A1	0
+scdesign3_simulated	T/NK | ref:DNT	MS4A1	0
+scdesign3_simulated	T/NK | ref:NK_C1	MS4A1	0
+scdesign3_simulated	T/NK | ref:NK_C2	MS4A1	0
+scdesign3_simulated	T/NK | ref:NK_C3	MS4A1	0
+scdesign3_simulated	B/Plasma | ref:B cell_C3	CD79A	5.70873502775344
+scdesign3_simulated	B/Plasma | ref:pDCs	CD79A	0.0846153846153846
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	CD79A	10.8947238658777
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	CD79A	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	CD79A	0
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	CD79A	0
+scdesign3_simulated	Myeloid/TAM | ref:Mast	CD79A	0.0215264187866927
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	CD79A	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	CD79A	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	CD79A	0.224935732647815
+scdesign3_simulated	T/NK | ref:CD4_C1	CD79A	0
+scdesign3_simulated	T/NK | ref:CD4_C2	CD79A	0
+scdesign3_simulated	T/NK | ref:CD8_C0	CD79A	0
+scdesign3_simulated	T/NK | ref:CD8_C1	CD79A	0.00156873930405019
+scdesign3_simulated	T/NK | ref:CD8_C3	CD79A	0
+scdesign3_simulated	T/NK | ref:DNT	CD79A	0.0195167286245354
+scdesign3_simulated	T/NK | ref:NK_C1	CD79A	0
+scdesign3_simulated	T/NK | ref:NK_C2	CD79A	0
+scdesign3_simulated	T/NK | ref:NK_C3	CD79A	0
+scdesign3_simulated	B/Plasma | ref:B cell_C3	MZB1	0.170902716914987
+scdesign3_simulated	B/Plasma | ref:pDCs	MZB1	3.95384615384615
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	MZB1	26.0150394477318
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	MZB1	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	MZB1	0
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	MZB1	0.0013740458015267
+scdesign3_simulated	Myeloid/TAM | ref:Mast	MZB1	0.0567514677103718
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	MZB1	0.00501556554825319
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	MZB1	0.0132774283717681
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	MZB1	0.0443444730077121
+scdesign3_simulated	T/NK | ref:CD4_C1	MZB1	0.00965218838409053
+scdesign3_simulated	T/NK | ref:CD4_C2	MZB1	0.0581802887985417
+scdesign3_simulated	T/NK | ref:CD8_C0	MZB1	0.0196324518153293
+scdesign3_simulated	T/NK | ref:CD8_C1	MZB1	0.082002281802624
+scdesign3_simulated	T/NK | ref:CD8_C3	MZB1	0
+scdesign3_simulated	T/NK | ref:DNT	MZB1	0.114312267657993
+scdesign3_simulated	T/NK | ref:NK_C1	MZB1	0.00468697689989964
+scdesign3_simulated	T/NK | ref:NK_C2	MZB1	0.0330414012738854
+scdesign3_simulated	T/NK | ref:NK_C3	MZB1	0.0308390022675736
+scdesign3_simulated	B/Plasma | ref:B cell_C3	JCHAIN	0.770961145194273
+scdesign3_simulated	B/Plasma | ref:pDCs	JCHAIN	14.8115384615385
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	JCHAIN	519.632149901381
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	JCHAIN	0.0924499229583975
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	JCHAIN	0.103696098562629
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	JCHAIN	0.0111450381679389
+scdesign3_simulated	Myeloid/TAM | ref:Mast	JCHAIN	0.299412915851272
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	JCHAIN	0.0178139052231062
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	JCHAIN	0.0527603074772886
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	JCHAIN	0.395886889460154
+scdesign3_simulated	T/NK | ref:CD4_C1	JCHAIN	0.00640705608254315
+scdesign3_simulated	T/NK | ref:CD4_C2	JCHAIN	0.0968736856862467
+scdesign3_simulated	T/NK | ref:CD8_C0	JCHAIN	0.0068130883012103
+scdesign3_simulated	T/NK | ref:CD8_C1	JCHAIN	0.141329150028523
+scdesign3_simulated	T/NK | ref:CD8_C3	JCHAIN	0.00744601638123607
+scdesign3_simulated	T/NK | ref:DNT	JCHAIN	0.0641263940520446
+scdesign3_simulated	T/NK | ref:NK_C1	JCHAIN	0.00937395379979908
+scdesign3_simulated	T/NK | ref:NK_C2	JCHAIN	0.0270700636942675
+scdesign3_simulated	T/NK | ref:NK_C3	JCHAIN	0
+scdesign3_simulated	B/Plasma | ref:B cell_C3	LYZ	0.0347648261758689
+scdesign3_simulated	B/Plasma | ref:pDCs	LYZ	0.05
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	LYZ	0.0335305719921104
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	LYZ	0.0231124807395993
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	LYZ	0.0297741273100616
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	LYZ	20.6067175572519
+scdesign3_simulated	Myeloid/TAM | ref:Mast	LYZ	0.0489236790606654
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	LYZ	11.3550674507091
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	LYZ	23.345213137666
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	LYZ	3.25964010282776
+scdesign3_simulated	T/NK | ref:CD4_C1	LYZ	0.0327009485771347
+scdesign3_simulated	T/NK | ref:CD4_C2	LYZ	0.0183653441749614
+scdesign3_simulated	T/NK | ref:CD8_C0	LYZ	0.0242940385477363
+scdesign3_simulated	T/NK | ref:CD8_C1	LYZ	0.0178265830005704
+scdesign3_simulated	T/NK | ref:CD8_C3	LYZ	0.0424422933730455
+scdesign3_simulated	T/NK | ref:DNT	LYZ	0.0241635687732342
+scdesign3_simulated	T/NK | ref:NK_C1	LYZ	0.0331436223635754
+scdesign3_simulated	T/NK | ref:NK_C2	LYZ	0.0238853503184713
+scdesign3_simulated	T/NK | ref:NK_C3	LYZ	0.0285714285714287
+scdesign3_simulated	B/Plasma | ref:B cell_C3	LST1	0.0628104002337128
+scdesign3_simulated	B/Plasma | ref:pDCs	LST1	0.7
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	LST1	0.00123274161735701
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	LST1	0.0107858243451464
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	LST1	0.0123203285420944
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	LST1	5.49206106870228
+scdesign3_simulated	Myeloid/TAM | ref:Mast	LST1	0.119373776908023
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	LST1	4.97803528190937
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	LST1	8.04996505939902
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	LST1	0.667095115681234
+scdesign3_simulated	T/NK | ref:CD4_C1	LST1	0.105924446663338
+scdesign3_simulated	T/NK | ref:CD4_C2	LST1	0.088181690733212
+scdesign3_simulated	T/NK | ref:CD8_C0	LST1	0.0762886597938146
+scdesign3_simulated	T/NK | ref:CD8_C1	LST1	0.051911009697661
+scdesign3_simulated	T/NK | ref:CD8_C3	LST1	0.0871183916604621
+scdesign3_simulated	T/NK | ref:DNT	LST1	0.175650557620818
+scdesign3_simulated	T/NK | ref:NK_C1	LST1	0.0271175092065617
+scdesign3_simulated	T/NK | ref:NK_C2	LST1	0.0141321656050956
+scdesign3_simulated	T/NK | ref:NK_C3	LST1	0.0349206349206349
+scdesign3_simulated	B/Plasma | ref:B cell_C3	CST3	0.011685655857435
+scdesign3_simulated	B/Plasma | ref:pDCs	CST3	21.4692307692308
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	CST3	0.155325443786982
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	CST3	4.12172573189522
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	CST3	10.9281314168378
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	CST3	62.6537404580152
+scdesign3_simulated	Myeloid/TAM | ref:Mast	CST3	3.66731898238748
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	CST3	44.1056727775856
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	CST3	54.024109014675
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	CST3	4.67223650385604
+scdesign3_simulated	T/NK | ref:CD4_C1	CST3	0.0439340988517225
+scdesign3_simulated	T/NK | ref:CD4_C2	CST3	0.0229917285854478
+scdesign3_simulated	T/NK | ref:CD8_C0	CST3	0.0732406992380098
+scdesign3_simulated	T/NK | ref:CD8_C1	CST3	0.039218482601255
+scdesign3_simulated	T/NK | ref:CD8_C3	CST3	0.0424422933730454
+scdesign3_simulated	T/NK | ref:DNT	CST3	0.0325278810408922
+scdesign3_simulated	T/NK | ref:NK_C1	CST3	0.0783394710411784
+scdesign3_simulated	T/NK | ref:NK_C2	CST3	0.0722531847133759
+scdesign3_simulated	T/NK | ref:NK_C3	CST3	0.162358276643991
+scdesign3_simulated	B/Plasma | ref:B cell_C3	CD68	0.0750803388840198
+scdesign3_simulated	B/Plasma | ref:pDCs	CD68	4.28076923076923
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	CD68	0.0860453648915187
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	CD68	0.0169491525423729
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	CD68	0.146817248459959
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	CD68	4.66274809160305
+scdesign3_simulated	Myeloid/TAM | ref:Mast	CD68	0.555772994129158
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	CD68	18.8211691456243
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	CD68	4.75192173305381
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	CD68	1.95694087403599
+scdesign3_simulated	T/NK | ref:CD4_C1	CD68	0.0222998835080712
+scdesign3_simulated	T/NK | ref:CD4_C2	CD68	0.0110752838917707
+scdesign3_simulated	T/NK | ref:CD8_C0	CD68	0.0247422680412372
+scdesign3_simulated	T/NK | ref:CD8_C1	CD68	0.0156873930405019
+scdesign3_simulated	T/NK | ref:CD8_C3	CD68	0.00670141474311244
+scdesign3_simulated	T/NK | ref:DNT	CD68	0.0418215613382899
+scdesign3_simulated	T/NK | ref:NK_C1	CD68	0.0137261466354202
+scdesign3_simulated	T/NK | ref:NK_C2	CD68	0.0117436305732484
+scdesign3_simulated	T/NK | ref:NK_C3	CD68	0.0190476190476191
+scdesign3_simulated	B/Plasma | ref:B cell_C3	MRC1	0
+scdesign3_simulated	B/Plasma | ref:pDCs	MRC1	0.0461538461538462
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	MRC1	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	MRC1	0.323574730354392
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	MRC1	0
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	MRC1	0.746106870229007
+scdesign3_simulated	Myeloid/TAM | ref:Mast	MRC1	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	MRC1	0.699584918713248
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	MRC1	0.220475192173305
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	MRC1	0.050771208226221
+scdesign3_simulated	T/NK | ref:CD4_C1	MRC1	0.000915293726077566
+scdesign3_simulated	T/NK | ref:CD4_C2	MRC1	0.00925276882097287
+scdesign3_simulated	T/NK | ref:CD8_C0	MRC1	0.0012550425818018
+scdesign3_simulated	T/NK | ref:CD8_C1	MRC1	0.000713063320022822
+scdesign3_simulated	T/NK | ref:CD8_C3	MRC1	0
+scdesign3_simulated	T/NK | ref:DNT	MRC1	0.00278810408921934
+scdesign3_simulated	T/NK | ref:NK_C1	MRC1	0
+scdesign3_simulated	T/NK | ref:NK_C2	MRC1	0.000995222929936313
+scdesign3_simulated	T/NK | ref:NK_C3	MRC1	0
+scdesign3_simulated	B/Plasma | ref:B cell_C3	EPCAM	0
+scdesign3_simulated	B/Plasma | ref:pDCs	EPCAM	0
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	EPCAM	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	EPCAM	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	EPCAM	0
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	EPCAM	0
+scdesign3_simulated	Myeloid/TAM | ref:Mast	EPCAM	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	EPCAM	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	EPCAM	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	EPCAM	0
+scdesign3_simulated	T/NK | ref:CD4_C1	EPCAM	0
+scdesign3_simulated	T/NK | ref:CD4_C2	EPCAM	0
+scdesign3_simulated	T/NK | ref:CD8_C0	EPCAM	0
+scdesign3_simulated	T/NK | ref:CD8_C1	EPCAM	0
+scdesign3_simulated	T/NK | ref:CD8_C3	EPCAM	0
+scdesign3_simulated	T/NK | ref:DNT	EPCAM	0
+scdesign3_simulated	T/NK | ref:NK_C1	EPCAM	0
+scdesign3_simulated	T/NK | ref:NK_C2	EPCAM	0
+scdesign3_simulated	T/NK | ref:NK_C3	EPCAM	0
+scdesign3_simulated	B/Plasma | ref:B cell_C3	KRT8	0.0306748466257669
+scdesign3_simulated	B/Plasma | ref:pDCs	KRT8	0.0961538461538461
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	KRT8	0.0542406311637081
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	KRT8	1.10015408320493
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	KRT8	1.4394250513347
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	KRT8	0.0135877862595419
+scdesign3_simulated	Myeloid/TAM | ref:Mast	KRT8	0.0117416829745597
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	KRT8	0.0397786233137321
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	KRT8	0.0345911949685534
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	KRT8	0.037917737789203
+scdesign3_simulated	T/NK | ref:CD4_C1	KRT8	0.0106506906307206
+scdesign3_simulated	T/NK | ref:CD4_C2	KRT8	0.0283190803308567
+scdesign3_simulated	T/NK | ref:CD8_C0	KRT8	0.0147915732855222
+scdesign3_simulated	T/NK | ref:CD8_C1	KRT8	0.0406446092413006
+scdesign3_simulated	T/NK | ref:CD8_C3	KRT8	0
+scdesign3_simulated	T/NK | ref:DNT	KRT8	0.0306691449814126
+scdesign3_simulated	T/NK | ref:NK_C1	KRT8	0.00703046534984937
+scdesign3_simulated	T/NK | ref:NK_C2	KRT8	0.0207006369426751
+scdesign3_simulated	T/NK | ref:NK_C3	KRT8	0.0036281179138322
+scdesign3_simulated	B/Plasma | ref:B cell_C3	KRT18	0.0289219982471516
+scdesign3_simulated	B/Plasma | ref:pDCs	KRT18	0
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	KRT18	0.0791420118343196
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	KRT18	0.825885978428351
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	KRT18	2.42402464065709
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	KRT18	0.0111450381679389
+scdesign3_simulated	Myeloid/TAM | ref:Mast	KRT18	0.0117416829745596
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	KRT18	0.0351089588377724
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	KRT18	0.0111809923130679
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	KRT18	0.0308483290488432
+scdesign3_simulated	T/NK | ref:CD4_C1	KRT18	0.037610251289732
+scdesign3_simulated	T/NK | ref:CD4_C2	KRT18	0.0337866255432494
+scdesign3_simulated	T/NK | ref:CD8_C0	KRT18	0.0139847601972208
+scdesign3_simulated	T/NK | ref:CD8_C1	KRT18	0.0427837992013691
+scdesign3_simulated	T/NK | ref:CD8_C3	KRT18	0.0260610573343262
+scdesign3_simulated	T/NK | ref:DNT	KRT18	0.0213754646840149
+scdesign3_simulated	T/NK | ref:NK_C1	KRT18	0.00703046534984935
+scdesign3_simulated	T/NK | ref:NK_C2	KRT18	0.0123407643312103
+scdesign3_simulated	T/NK | ref:NK_C3	KRT18	0.00997732426303854
+scdesign3_simulated	B/Plasma | ref:B cell_C3	KRT19	0.0330119777972538
+scdesign3_simulated	B/Plasma | ref:pDCs	KRT19	0
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	KRT19	0.0258875739644969
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	KRT19	0.520801232665639
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	KRT19	1.13757700205339
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	KRT19	0.0010687022900763
+scdesign3_simulated	Myeloid/TAM | ref:Mast	KRT19	0.166340508806262
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	KRT19	0.031649948114839
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	KRT19	0.0258560447239693
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	KRT19	0.0482005141388174
+scdesign3_simulated	T/NK | ref:CD4_C1	KRT19	0.00640705608254292
+scdesign3_simulated	T/NK | ref:CD4_C2	KRT19	0.0651899621477643
+scdesign3_simulated	T/NK | ref:CD8_C0	KRT19	0.0041237113402062
+scdesign3_simulated	T/NK | ref:CD8_C1	KRT19	0.0694523673702224
+scdesign3_simulated	T/NK | ref:CD8_C3	KRT19	0.00297840655249437
+scdesign3_simulated	T/NK | ref:DNT	KRT19	0.0511152416356875
+scdesign3_simulated	T/NK | ref:NK_C1	KRT19	0.00602611315701374
+scdesign3_simulated	T/NK | ref:NK_C2	KRT19	0.0501592356687896
+scdesign3_simulated	T/NK | ref:NK_C3	KRT19	0.00498866213151925
+scdesign3_simulated	B/Plasma | ref:B cell_C3	PECAM1	0.0575518550978673
+scdesign3_simulated	B/Plasma | ref:pDCs	PECAM1	0.811538461538462
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	PECAM1	0.692800788954635
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	PECAM1	12.0924499229584
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	PECAM1	0.0728952772073923
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	PECAM1	0.847480916030535
+scdesign3_simulated	Myeloid/TAM | ref:Mast	PECAM1	0.0645792563600783
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	PECAM1	1.0674507090972
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	PECAM1	1.93326345213138
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	PECAM1	0.0687660668380462
+scdesign3_simulated	T/NK | ref:CD4_C1	PECAM1	0.0535862872358129
+scdesign3_simulated	T/NK | ref:CD4_C2	PECAM1	0.022991728585448
+scdesign3_simulated	T/NK | ref:CD8_C0	PECAM1	0.267413715822502
+scdesign3_simulated	T/NK | ref:CD8_C1	PECAM1	0.268397033656589
+scdesign3_simulated	T/NK | ref:CD8_C3	PECAM1	0.414743112434847
+scdesign3_simulated	T/NK | ref:DNT	PECAM1	0.298327137546468
+scdesign3_simulated	T/NK | ref:NK_C1	PECAM1	0.115500502176096
+scdesign3_simulated	T/NK | ref:NK_C2	PECAM1	0.117635350318471
+scdesign3_simulated	T/NK | ref:NK_C3	PECAM1	0.243990929705215
+scdesign3_simulated	B/Plasma | ref:B cell_C3	VWF	0
+scdesign3_simulated	B/Plasma | ref:pDCs	VWF	0
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	VWF	0.000986193293885627
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	VWF	22.1648690292758
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	VWF	0.247433264887064
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	VWF	0
+scdesign3_simulated	Myeloid/TAM | ref:Mast	VWF	0.00391389432485323
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	VWF	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	VWF	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	VWF	0
+scdesign3_simulated	T/NK | ref:CD4_C1	VWF	0
+scdesign3_simulated	T/NK | ref:CD4_C2	VWF	0
+scdesign3_simulated	T/NK | ref:CD8_C0	VWF	0
+scdesign3_simulated	T/NK | ref:CD8_C1	VWF	0
+scdesign3_simulated	T/NK | ref:CD8_C3	VWF	0
+scdesign3_simulated	T/NK | ref:DNT	VWF	0
+scdesign3_simulated	T/NK | ref:NK_C1	VWF	0
+scdesign3_simulated	T/NK | ref:NK_C2	VWF	0
+scdesign3_simulated	T/NK | ref:NK_C3	VWF	0
+scdesign3_simulated	B/Plasma | ref:B cell_C3	COL1A1	0
+scdesign3_simulated	B/Plasma | ref:pDCs	COL1A1	0.0230769230769231
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	COL1A1	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	COL1A1	0.328197226502311
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	COL1A1	65.5492813141684
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	COL1A1	0
+scdesign3_simulated	Myeloid/TAM | ref:Mast	COL1A1	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	COL1A1	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	COL1A1	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	COL1A1	0
+scdesign3_simulated	T/NK | ref:CD4_C1	COL1A1	0
+scdesign3_simulated	T/NK | ref:CD4_C2	COL1A1	0
+scdesign3_simulated	T/NK | ref:CD8_C0	COL1A1	0
+scdesign3_simulated	T/NK | ref:CD8_C1	COL1A1	0
+scdesign3_simulated	T/NK | ref:CD8_C3	COL1A1	0
+scdesign3_simulated	T/NK | ref:DNT	COL1A1	0
+scdesign3_simulated	T/NK | ref:NK_C1	COL1A1	0
+scdesign3_simulated	T/NK | ref:NK_C2	COL1A1	0
+scdesign3_simulated	T/NK | ref:NK_C3	COL1A1	0
+scdesign3_simulated	B/Plasma | ref:B cell_C3	DCN	0.00146070698217934
+scdesign3_simulated	B/Plasma | ref:pDCs	DCN	0
+scdesign3_simulated	B/Plasma | ref:Plasma_C0	DCN	0
+scdesign3_simulated	Endothelial/Fibroblast | ref:Endothelial_C0	DCN	0.0739599383667181
+scdesign3_simulated	Endothelial/Fibroblast | ref:VSMC_C3	DCN	14.0297741273101
+scdesign3_simulated	Myeloid/TAM | ref:Classical Mono_C1	DCN	0
+scdesign3_simulated	Myeloid/TAM | ref:Mast	DCN	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C0	DCN	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C3	DCN	0
+scdesign3_simulated	Myeloid/TAM | ref:TAM_C4	DCN	0
+scdesign3_simulated	T/NK | ref:CD4_C1	DCN	0
+scdesign3_simulated	T/NK | ref:CD4_C2	DCN	0.000560773867937758
+scdesign3_simulated	T/NK | ref:CD8_C0	DCN	0.000268937696100409
+scdesign3_simulated	T/NK | ref:CD8_C1	DCN	0.00128351397604108
+scdesign3_simulated	T/NK | ref:CD8_C3	DCN	0
+scdesign3_simulated	T/NK | ref:DNT	DCN	0
+scdesign3_simulated	T/NK | ref:NK_C1	DCN	0
+scdesign3_simulated	T/NK | ref:NK_C2	DCN	0.00218949044585984
+scdesign3_simulated	T/NK | ref:NK_C3	DCN	0

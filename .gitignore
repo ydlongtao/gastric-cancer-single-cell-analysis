@@ -41,6 +41,16 @@ results/**
 !results/GSE234129/tables/GSE234129_leiden_cluster_counts.tsv
 !results/GSE234129/tables/GSE234129_classic_marker_scores.tsv
 !results/GSE234129/tables/GSE234129_leiden05_celltype_crosstab.tsv
+!results/GSE234129/scdesign3/
+!results/GSE234129/scdesign3/GSE234129_scdesign3_simulation_report.md
+!results/GSE234129/scdesign3/figures/
+!results/GSE234129/scdesign3/figures/*.pdf
+!results/GSE234129/scdesign3/figures/*.tif
+!results/GSE234129/scdesign3/tables/
+!results/GSE234129/scdesign3/tables/GSE234129_scdesign3_feature_set_hvg_markers.tsv
+!results/GSE234129/scdesign3/tables/GSE234129_scdesign3_original_vs_simulated_composition.tsv
+!results/GSE234129/scdesign3/tables/GSE234129_scdesign3_original_vs_simulated_marker_summary.tsv
+!results/GSE234129/scdesign3/tables/GSE234129_scdesign3_original_vs_simulated_qc_summary.tsv
 
 # Large local datasets
 Datasets/*/raw/

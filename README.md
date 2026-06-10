@@ -171,6 +171,26 @@ GSE234129 scop 绘图流程：
 Rscript scripts/R/04_gse234129_scop_plots.R
 ```
 
+GSE234129 scDesign3 四倍模拟流程：
+
+```bash
+Rscript scripts/R/05_gse234129_scdesign3_simulation.R \
+  --refresh-inputs \
+  --max-features=200 \
+  --n-cores=7 \
+  --mu-formula=global_annotation
+```
+
+当前成功模拟版本：
+
+- 输入对象：`results/GSE234129/objects/GSE234129_annotated.h5ad`
+- 基准细胞数：19,144
+- 模拟细胞数：76,576
+- 特征基因数：200
+- 模型公式：`global_annotation`
+- 运行耗时：25 分 48 秒（2026-06-10 09:25:17 到 09:51:05）
+- 报告：`results/GSE234129/scdesign3/GSE234129_scdesign3_simulation_report.md`
+
 R/Seurat：
 
 ```bash

@@ -236,3 +236,63 @@ export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
   - 简短分析报告
   - cluster 注释表和 top marker 摘要表
 - 原始矩阵数据在公开仓库中仅保留 GEO/GEO FTP 下载链接和转换脚本。
+
+## 15. scDesign3 四倍模拟执行
+
+日期：2026-06-10
+
+- 新增 scDesign3 输入导出脚本：
+  - `scripts/python/export_gse234129_scdesign3_inputs.py`
+- 新增 scDesign3 主脚本：
+  - `scripts/R/05_gse234129_scdesign3_simulation.R`
+
+执行策略：
+
+- 使用 QC 后 annotated 对象作为正式输入：
+  - `results/GSE234129/objects/GSE234129_annotated.h5ad`
+- 使用 Seurat counts 对象提供原始计数：
+  - `Datasets/GSE234129/processed/GSE234129_seurat.rds`
+- 先尝试 `3078` 个 HVG+marker 特征和 `global_annotation + sample`，边际模型拟合过慢。
+- 调整为 `200` 个 HVG/marker 特征，并将均值公式降为 `global_annotation`。
+- 使用 `n_cores=7`，同时在脚本内将 `OMP_NUM_THREADS`、`OPENBLAS_NUM_THREADS`、`MKL_NUM_THREADS`、`VECLIB_MAXIMUM_THREADS` 等底层线程限制为 `1`，避免递归并行占满线程。
+
+最终命令：
+
+```bash
+Rscript scripts/R/05_gse234129_scdesign3_simulation.R \
+  --refresh-inputs \
+  --max-features=200 \
+  --n-cores=7 \
+  --mu-formula=global_annotation
+```
+
+最终日志：
+
+- `results/GSE234129/scdesign3/logs/GSE234129_scdesign3_4x_200features_global_annotation_20260610_092510.log`
+
+耗时：
+
+- 全流程：25 分 48 秒
+- 起止时间：2026-06-10 09:25:17 到 09:51:05
+- scDesign3 正式模拟段：2026-06-10 09:25:32 到 09:51:05，约 25 分 33 秒
+
+输出：
+
+- `results/GSE234129/scdesign3/objects/GSE234129_scdesign3_simulated_4x_200features_hvg_markers_counts.rds`
+- `results/GSE234129/scdesign3/objects/GSE234129_scdesign3_simulated_4x_200features_hvg_markers_sce.rds`
+- `results/GSE234129/scdesign3/objects/GSE234129_scdesign3_simulated_4x_200features_hvg_markers_seurat.rds`
+- `results/GSE234129/scdesign3/tables/GSE234129_scdesign3_simulated_4x_200features_hvg_markers_metadata.tsv`
+- `results/GSE234129/scdesign3/GSE234129_scdesign3_simulation_report.md`
+- QC、composition、UMAP、marker dotplot 的 PDF/TIF/PNG 图件。
+
+验证：
+
+- 模拟 counts：`200 × 76576`
+- 模拟 SCE：`200 × 76576`
+- 模拟 Seurat：`200 × 76576`
+- metadata 行数：76,576
+- unique barcodes：76,576
+- feature set：200
+- `cell_count_ok=TRUE`
+- `metadata_ok=TRUE`
+- `feature_ok=TRUE`

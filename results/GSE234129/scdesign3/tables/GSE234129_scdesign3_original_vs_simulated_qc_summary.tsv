@@ -1,0 +1,7 @@
+source	metric	min	q01	q05	median	mean	q95	q99	max
+original_qc	total_counts	29	131.43	254	831	1175.0437212704	3570.85	5821.26	16856
+original_qc	n_genes_by_counts	21	41	54	84	83.120298788132	110	120	143
+original_qc	zero_fraction	0.285	0.4	0.45	0.58	0.58439850605934	0.73	0.795	0.895
+scdesign3_simulated	total_counts	17	163	277	884	1176.19596218141	3126	4961.25	14325
+scdesign3_simulated	n_genes_by_counts	8	48	58	83	83.4451264103636	109	117	132
+scdesign3_simulated	zero_fraction	0.34	0.415	0.455	0.585	0.582774367948182	0.71	0.76	0.96
