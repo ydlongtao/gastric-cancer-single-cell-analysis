@@ -154,3 +154,41 @@ QC 结果：
 - metadata 行数为 76,576
 - feature set 行数为 200
 - 4 倍模拟目标通过
+
+## 原始数据集 scop 绘图更新
+
+更新时间：2026-06-10
+
+新增脚本：
+
+- `scripts/python/export_gse234129_raw_scop_inputs.py`
+- `scripts/R/06_gse234129_raw_scop_plots.R`
+
+流程说明：
+
+- 使用 `Datasets/GSE234129/processed/GSE234129_scanpy.h5ad` 作为原始未过滤输入。
+- 不套用 QC 过滤阈值，保留全部 19,488 个细胞。
+- 在原始全集上重新计算 QC 指标、HVG、PCA、neighbors、UMAP 和 Leiden 0.5。
+- 使用 `Datasets/GSE234129/processed/GSE234129_seurat.rds` 与导出的 UMAP/QC metadata 生成 scop 图件。
+
+验证结果：
+
+- Seurat plotting object：`27176 × 19488`
+- metadata 行数：19,488
+- UMAP 细胞数：19,488
+- sample 数：17
+- celltype 标签数：62
+- Leiden 0.5 cluster 数：19
+
+图件目录：
+
+- `results/GSE234129/figures/scop_raw/`
+
+已生成图件：
+
+- Leiden 0.5 UMAP
+- celltype UMAP
+- sample UMAP
+- QC violin by sample
+- mitochondrial percentage UMAP
+- celltype composition by sample

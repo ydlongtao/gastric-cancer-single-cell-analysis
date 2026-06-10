@@ -171,6 +171,22 @@ GSE234129 scop 绘图流程：
 Rscript scripts/R/04_gse234129_scop_plots.R
 ```
 
+GSE234129 原始未过滤数据集 scop 绘图流程：
+
+```bash
+/Users/huangfulongtao/micromamba/envs/biomni_e1/bin/python scripts/python/export_gse234129_raw_scop_inputs.py
+Rscript scripts/R/06_gse234129_raw_scop_plots.R
+```
+
+原始数据集 scop 输出：
+
+- 输入细胞数：19,488
+- sample 数：17
+- 原始 celltype 标签数：62
+- Leiden 0.5 cluster 数：19
+- 图件目录：`results/GSE234129/figures/scop_raw/`
+- 正式图件格式：PDF 和 600 dpi TIF；PNG 仅作预览
+
 GSE234129 scDesign3 四倍模拟流程：
 
 ```bash

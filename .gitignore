@@ -35,6 +35,9 @@ results/**
 !results/GSE234129/figures/scop/
 !results/GSE234129/figures/scop/*.pdf
 !results/GSE234129/figures/scop/*.tif
+!results/GSE234129/figures/scop_raw/
+!results/GSE234129/figures/scop_raw/*.pdf
+!results/GSE234129/figures/scop_raw/*.tif
 !results/GSE234129/tables/
 !results/GSE234129/tables/GSE234129_cluster_annotation.tsv
 !results/GSE234129/tables/GSE234129_leiden05_top20_markers.tsv

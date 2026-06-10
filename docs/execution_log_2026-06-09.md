@@ -296,3 +296,53 @@ Rscript scripts/R/05_gse234129_scdesign3_simulation.R \
 - `cell_count_ok=TRUE`
 - `metadata_ok=TRUE`
 - `feature_ok=TRUE`
+
+## 16. 原始数据集 scop 绘图
+
+日期：2026-06-10
+
+- 新增原始数据集 scop metadata 导出脚本：
+  - `scripts/python/export_gse234129_raw_scop_inputs.py`
+- 新增原始数据集 scop 绘图脚本：
+  - `scripts/R/06_gse234129_raw_scop_plots.R`
+
+执行命令：
+
+```bash
+/Users/huangfulongtao/micromamba/envs/biomni_e1/bin/python scripts/python/export_gse234129_raw_scop_inputs.py
+Rscript scripts/R/06_gse234129_raw_scop_plots.R
+```
+
+输入：
+
+- `Datasets/GSE234129/processed/GSE234129_scanpy.h5ad`
+- `Datasets/GSE234129/processed/GSE234129_seurat.rds`
+
+方法：
+
+- 保留原始未过滤全集 19,488 个细胞。
+- 重新计算 QC 指标：`n_genes_by_counts`、`total_counts`、`pct_counts_mt`。
+- 在原始全集上计算 HVG、PCA、neighbors、UMAP 和 Leiden 0.5。
+- 使用 scop 输出正式 PDF/TIF 图件，PNG 仅作预览。
+
+验证：
+
+- exported metadata：19,488 行，10 列
+- Seurat plotting object：`27176 × 19488`
+- UMAP cells：19,488
+- samples：17
+- celltypes：62
+- Leiden 0.5 clusters：19
+
+输出：
+
+- `results/GSE234129/tables/GSE234129_raw_scop_plot_metadata.tsv`
+- `results/GSE234129/objects/GSE234129_raw_scop_plotting_seurat.rds`
+- `results/GSE234129/figures/scop_raw/GSE234129_raw_scop_umap_leiden05.pdf`
+- `results/GSE234129/figures/scop_raw/GSE234129_raw_scop_umap_celltype.pdf`
+- `results/GSE234129/figures/scop_raw/GSE234129_raw_scop_umap_sample.pdf`
+- `results/GSE234129/figures/scop_raw/GSE234129_raw_scop_qc_violin_by_sample.pdf`
+- `results/GSE234129/figures/scop_raw/GSE234129_raw_scop_umap_pct_counts_mt.pdf`
+- `results/GSE234129/figures/scop_raw/GSE234129_raw_scop_celltype_composition_by_sample.pdf`
+
+每张图同步输出 `.tif` 正式位图版本。

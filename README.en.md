@@ -109,6 +109,20 @@ results/GSE234129/figures/scop/
 
 PNG files are preview-only and are not the preferred deliverable format.
 
+Raw, unfiltered GSE234129 scop plots can be regenerated with:
+
+```bash
+/Users/huangfulongtao/micromamba/envs/biomni_e1/bin/python scripts/python/export_gse234129_raw_scop_inputs.py
+Rscript scripts/R/06_gse234129_raw_scop_plots.R
+```
+
+The raw workflow uses all 19,488 cells, 17 samples, 62 existing cell type labels,
+and 19 Leiden 0.5 clusters. Formal PDF and 600 dpi TIF figures are written under:
+
+```text
+results/GSE234129/figures/scop_raw/
+```
+
 ## scDesign3 Simulation Workflow
 
 The completed simulation uses the QC-filtered annotated object as input and
