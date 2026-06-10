@@ -87,3 +87,34 @@ results/GSE234129/figures/scop/
 
 - 当前 `FeatureStatPlot()` 绘制 QC metadata 时会提示 `Layer 'data' is empty`，因为输入 Seurat 对象只保留 counts layer；图像经检查正常显示 QC metadata 分布。
 - 如果后续要用 `scop::RunCellQC()` 或其他深度流程，建议基于原始 Seurat 对象先运行 `NormalizeData()` 或完整 Seurat/scop 标准化流程。
+
+## GSE234129 扩展 scop 分析
+
+新增脚本：
+
+```bash
+Rscript scripts/R/08_gse234129_scop_extended_analysis.R
+```
+
+分析内容：
+
+- `GroupHeatmap()`：经典 marker、`global_annotation` top markers、Leiden 0.5 top markers。
+- `FeatureHeatmap()`：按 `global_annotation` 抽样展示经典 marker 表达。
+- `CellCorHeatmap()`：比较 QC 对象内部的 `leiden_0.5`、`celltype`、`global_annotation`、`sample`，并补充 raw-vs-QC 对照。
+- `RunSlingshot()`：对 T/NK、Myeloid/TAM、B/Plasma 三个满足规模条件的谱系进行 pseudotime 推断。
+- `PseudotimeProjectionPlot()` 和 `DynamicHeatmap()`：展示 pseudotime 方向和谱系动态表达。
+
+输出目录：
+
+```text
+results/GSE234129/figures/scop_extended/
+results/GSE234129/tables/scop_extended/
+results/GSE234129/reports/GSE234129_scop_extended_analysis_report.md
+```
+
+注意：
+
+- 脚本固定 `OMP_NUM_THREADS`、`OPENBLAS_NUM_THREADS`、`MKL_NUM_THREADS`、`VECLIB_MAXIMUM_THREADS`、`BLIS_NUM_THREADS` 为 1，避免并行计算占满线程。
+- `monocle3`、`tradeSeq`、`palantir` 当前未安装，正式轨迹分析使用已安装的 `slingshot`。
+- `GroupHeatmap()` 在使用 `grouping.var` 时会按 `scop` 规则将表达比较限制为 `log2fc`。
+- B/Plasma 的 Slingshot 轨迹可正常输出；该谱系动态热图可能因个别基因拟合出现 infinite/missing values 而被记录为局部跳过。

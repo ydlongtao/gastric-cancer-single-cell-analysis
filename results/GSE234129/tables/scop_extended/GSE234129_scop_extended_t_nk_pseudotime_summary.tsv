@@ -1,0 +1,4 @@
+subset	lineage	cells_with_pseudotime	min_pseudotime	max_pseudotime
+t_nk	t_nk_Lineage1	8715	0.156231254277547	29.4818032109176
+t_nk	t_nk_Lineage2	8578	0	29.0907454107312
+t_nk	t_nk_Lineage3	7105	0	20.7366615241317

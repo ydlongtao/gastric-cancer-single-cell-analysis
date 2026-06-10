@@ -1,0 +1,23 @@
+step	status	detail
+group_heatmap_classic_markers	completed	
+group_heatmap_global_top_markers	completed	
+group_heatmap_leiden_top_markers	completed	
+feature_heatmap_classic_markers_sampled	completed	
+cellcor_leiden_vs_global_annotation	completed	
+cellcor_celltype_vs_global_annotation	completed	
+cellcor_sample_similarity	completed	
+cellcor_raw_celltype_vs_qc_global_annotation	completed	
+cellcor_raw_leiden_vs_qc_leiden	completed	
+trajectory_t_nk_dynamic_heatmap	completed	
+trajectory_t_nk	completed	t_nk_Lineage1, t_nk_Lineage2, t_nk_Lineage3
+trajectory_wrapper_t_nk	completed	
+trajectory_myeloid_tam_dynamic_heatmap	completed	
+trajectory_myeloid_tam	completed	myeloid_tam_Lineage1, myeloid_tam_Lineage2, myeloid_tam_Lineage3
+trajectory_wrapper_myeloid_tam	completed	
+trajectory_b_plasma_dynamic_heatmap	skipped_or_failed	length of 'dimnames' [2] not equal to array extent
+trajectory_b_plasma	completed	b_plasma_Lineage1, b_plasma_Lineage2
+trajectory_wrapper_b_plasma	completed	
+trajectory_epithelial_tumor	skipped	No cells matched the lineage pattern
+trajectory_wrapper_epithelial_tumor	completed	
+trajectory_endothelial_fibroblast	skipped	Fewer than 3 groups with at least 30 cells: Endothelial/Fibroblast | ref:Endothelial_C0=174; Endothelial/Fibroblast | ref:VSMC_C3=248
+trajectory_wrapper_endothelial_fibroblast	completed	

@@ -1,0 +1,3 @@
+subset	lineage	cells_with_pseudotime	min_pseudotime	max_pseudotime
+b_plasma	b_plasma_Lineage1	1637	0	24.7526073824851
+b_plasma	b_plasma_Lineage2	837	0	26.6304303450694

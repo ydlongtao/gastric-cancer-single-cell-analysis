@@ -123,6 +123,26 @@ and 19 Leiden 0.5 clusters. Formal PDF and 600 dpi TIF figures are written under
 results/GSE234129/figures/scop_raw/
 ```
 
+Extended GSE234129 scop analyses can be regenerated with:
+
+```bash
+Rscript scripts/R/08_gse234129_scop_extended_analysis.R
+```
+
+This workflow adds `GroupHeatmap`, `CellCorHeatmap`, raw-vs-QC similarity
+checks, Slingshot trajectory inference, pseudotime projection plots, and dynamic
+heatmaps for eligible lineages. The main QC object is used for discovery; raw
+data are used as a supplementary comparison.
+
+Main outputs:
+
+- Figures: `results/GSE234129/figures/scop_extended/`
+- Tables: `results/GSE234129/tables/scop_extended/`
+- Report: `results/GSE234129/reports/GSE234129_scop_extended_analysis_report.md`
+
+Formal figures are written as PDF and 600 dpi TIF files. PNG files are preview
+only and remain local.
+
 ## scDesign3 Simulation Workflow
 
 The completed simulation uses the QC-filtered annotated object as input and

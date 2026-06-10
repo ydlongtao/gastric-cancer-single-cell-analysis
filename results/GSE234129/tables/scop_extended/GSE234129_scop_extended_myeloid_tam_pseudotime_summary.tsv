@@ -1,0 +1,4 @@
+subset	lineage	cells_with_pseudotime	min_pseudotime	max_pseudotime
+myeloid_tam	myeloid_tam_Lineage1	2514	0.512539639436687	36.8930061546551
+myeloid_tam	myeloid_tam_Lineage2	2770	0.512479669635481	24.9537490156034
+myeloid_tam	myeloid_tam_Lineage3	2735	0	22.1193152850233

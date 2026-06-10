@@ -79,3 +79,34 @@ Each basename is exported as `.pdf` and `.tif`:
 - `GSE234129_scop_annotation_composition_by_sample`
 
 PDF is the editable vector format. TIF is exported at 600 dpi for publication-style bitmap output. PNG files are preview-only.
+
+## GSE234129 Extended scop Analysis
+
+New script:
+
+```bash
+Rscript scripts/R/08_gse234129_scop_extended_analysis.R
+```
+
+Analyses:
+
+- `GroupHeatmap()` for classic markers, `global_annotation` top markers, and Leiden 0.5 top markers.
+- `FeatureHeatmap()` for sampled classic marker expression by `global_annotation`.
+- `CellCorHeatmap()` for QC-object comparisons across `leiden_0.5`, `celltype`, `global_annotation`, and `sample`, plus raw-vs-QC comparisons.
+- `RunSlingshot()` pseudotime inference for eligible T/NK, Myeloid/TAM, and B/Plasma lineages.
+- `PseudotimeProjectionPlot()` and `DynamicHeatmap()` for pseudotime direction and lineage-associated expression dynamics.
+
+Outputs:
+
+```text
+results/GSE234129/figures/scop_extended/
+results/GSE234129/tables/scop_extended/
+results/GSE234129/reports/GSE234129_scop_extended_analysis_report.md
+```
+
+Notes:
+
+- The script fixes `OMP_NUM_THREADS`, `OPENBLAS_NUM_THREADS`, `MKL_NUM_THREADS`, `VECLIB_MAXIMUM_THREADS`, and `BLIS_NUM_THREADS` to 1 to avoid runaway parallelism.
+- `monocle3`, `tradeSeq`, and `palantir` are not currently installed; the formal trajectory workflow uses the installed `slingshot` package.
+- When `grouping.var` is used, `GroupHeatmap()` follows `scop` behavior and restricts expression comparisons to `log2fc`.
+- B/Plasma Slingshot trajectory outputs are generated successfully; the B/Plasma dynamic heatmap can be locally skipped if several genes fail model fitting because of infinite or missing values.

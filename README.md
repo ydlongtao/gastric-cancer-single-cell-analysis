@@ -187,6 +187,26 @@ Rscript scripts/R/06_gse234129_raw_scop_plots.R
 - 图件目录：`results/GSE234129/figures/scop_raw/`
 - 正式图件格式：PDF 和 600 dpi TIF；PNG 仅作预览
 
+GSE234129 scop 扩展分析流程：
+
+```bash
+Rscript scripts/R/08_gse234129_scop_extended_analysis.R
+```
+
+扩展分析内容：
+
+- `GroupHeatmap`：经典 marker、`global_annotation` top markers、Leiden 0.5 top markers。
+- `CellCorHeatmap`：QC 对象内部的 cluster/annotation/sample 相似性，以及 raw-vs-QC 对照。
+- Slingshot trajectory inference：T/NK、Myeloid/TAM、B/Plasma 三条满足规模条件的谱系。
+- `PseudotimeProjectionPlot` 和动态基因热图：用于展示 pseudotime 方向和谱系相关表达变化。
+
+扩展分析输出：
+
+- 图件目录：`results/GSE234129/figures/scop_extended/`
+- 表格目录：`results/GSE234129/tables/scop_extended/`
+- 报告：`results/GSE234129/reports/GSE234129_scop_extended_analysis_report.md`
+- 正式图件格式：PDF 和 600 dpi TIF；PNG 仅作预览
+
 GSE234129 scDesign3 四倍模拟流程：
 
 ```bash
