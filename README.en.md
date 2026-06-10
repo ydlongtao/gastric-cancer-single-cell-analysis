@@ -143,6 +143,27 @@ Main outputs:
 Formal figures are written as PDF and 600 dpi TIF files. PNG files are preview
 only and remain local.
 
+GSE234129 differential expression and enrichment analyses can be regenerated with:
+
+```bash
+Rscript scripts/R/09_gse234129_de_enrichment_analysis.R
+```
+
+This workflow summarizes the existing Scanpy Wilcoxon Leiden 0.5 marker table,
+creates faceted volcano panels, significant-marker count plots, top-marker group
+heatmaps, and ORA enrichment displays for GO Biological Process, KEGG, Reactome,
+and MSigDB Hallmark gene sets. The ORA background is all tested marker genes
+that can be mapped to Entrez IDs.
+
+Main outputs:
+
+- Figures: `results/GSE234129/figures/de_enrichment/`
+- Tables: `results/GSE234129/tables/de_enrichment/`
+- Report: `results/GSE234129/reports/GSE234129_de_enrichment_analysis_report.md`
+
+The full annotated marker table is large and remains local; Git keeps the
+summaries, top-marker tables, enrichment tables, report, and PDF/TIF figures.
+
 ## scDesign3 Simulation Workflow
 
 The completed simulation uses the QC-filtered annotated object as input and

@@ -110,3 +110,33 @@ Notes:
 - `monocle3`, `tradeSeq`, and `palantir` are not currently installed; the formal trajectory workflow uses the installed `slingshot` package.
 - When `grouping.var` is used, `GroupHeatmap()` follows `scop` behavior and restricts expression comparisons to `log2fc`.
 - B/Plasma Slingshot trajectory outputs are generated successfully; the B/Plasma dynamic heatmap can be locally skipped if several genes fail model fitting because of infinite or missing values.
+
+## GSE234129 Differential Expression and Enrichment Displays
+
+New script:
+
+```bash
+Rscript scripts/R/09_gse234129_de_enrichment_analysis.R
+```
+
+Analyses:
+
+- Uses the existing Scanpy Wilcoxon marker results in `results/GSE234129/tables/GSE234129_leiden05_markers.tsv`.
+- Defines significant markers as `pval_adj < 0.05` and `abs(logfoldchange) >= 0.25`.
+- Creates faceted volcano panels for all 20 Leiden 0.5 clusters.
+- Uses `GroupHeatmap()` to display top global annotation markers.
+- Uses `clusterProfiler`, `org.Hs.eg.db`, `ReactomePA`, `msigdbr`, and `enrichplot` for GO BP, KEGG, Reactome, and MSigDB Hallmark ORA displays.
+- Uses all tested marker genes with Entrez mappings as the ORA background.
+
+Outputs:
+
+```text
+results/GSE234129/figures/de_enrichment/
+results/GSE234129/tables/de_enrichment/
+results/GSE234129/reports/GSE234129_de_enrichment_analysis_report.md
+```
+
+Notes:
+
+- `GSE234129_de_all_leiden05_markers_annotated.tsv` is about 79 MB and remains local.
+- Git keeps the summary tables, top-marker tables, enrichment result tables, report, and PDF/TIF figures.

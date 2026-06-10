@@ -1,0 +1,9 @@
+step	status	detail
+volcano_faceted_clusters	completed	
+de_summary_barplot	completed	
+de_marker_heatmap	completed	
+enrich_go_bp_global_annotation	completed	
+enrich_kegg_broad_annotation	completed	
+enrich_reactome_broad_annotation	completed	
+enrich_hallmark_broad_annotation	completed	
+enrichment_network_go_bp_broad	completed	

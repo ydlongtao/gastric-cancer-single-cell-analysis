@@ -207,6 +207,26 @@ Rscript scripts/R/08_gse234129_scop_extended_analysis.R
 - 报告：`results/GSE234129/reports/GSE234129_scop_extended_analysis_report.md`
 - 正式图件格式：PDF 和 600 dpi TIF；PNG 仅作预览
 
+GSE234129 差异表达和富集分析流程：
+
+```bash
+Rscript scripts/R/09_gse234129_de_enrichment_analysis.R
+```
+
+分析内容：
+
+- 基于既有 Scanpy Wilcoxon Leiden 0.5 marker 结果整理差异表达表。
+- 输出 cluster 分面火山图、显著 marker 数量图、top marker group heatmap。
+- 对显著上调 marker 进行 GO Biological Process、KEGG、Reactome 和 MSigDB Hallmark ORA 富集。
+- 使用所有已测试且可映射 Entrez ID 的 marker 基因作为 ORA background。
+
+输出：
+
+- 图件目录：`results/GSE234129/figures/de_enrichment/`
+- 表格目录：`results/GSE234129/tables/de_enrichment/`
+- 报告：`results/GSE234129/reports/GSE234129_de_enrichment_analysis_report.md`
+- 完整注释 marker 表较大，保留在本地；Git 中同步摘要、top marker、富集表、报告和 PDF/TIF 图件。
+
 GSE234129 scDesign3 四倍模拟流程：
 
 ```bash

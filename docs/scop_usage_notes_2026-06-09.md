@@ -118,3 +118,33 @@ results/GSE234129/reports/GSE234129_scop_extended_analysis_report.md
 - `monocle3`、`tradeSeq`、`palantir` 当前未安装，正式轨迹分析使用已安装的 `slingshot`。
 - `GroupHeatmap()` 在使用 `grouping.var` 时会按 `scop` 规则将表达比较限制为 `log2fc`。
 - B/Plasma 的 Slingshot 轨迹可正常输出；该谱系动态热图可能因个别基因拟合出现 infinite/missing values 而被记录为局部跳过。
+
+## GSE234129 差异表达与富集展示
+
+新增脚本：
+
+```bash
+Rscript scripts/R/09_gse234129_de_enrichment_analysis.R
+```
+
+分析内容：
+
+- 基于 `results/GSE234129/tables/GSE234129_leiden05_markers.tsv` 中已有 Scanpy Wilcoxon marker 结果。
+- 以 `pval_adj < 0.05` 且 `abs(logfoldchange) >= 0.25` 定义显著 marker。
+- 火山图展示 20 个 Leiden 0.5 cluster 的差异表达结果。
+- 使用 `GroupHeatmap()` 展示 top global annotation marker。
+- 使用 `clusterProfiler`、`org.Hs.eg.db`、`ReactomePA`、`msigdbr` 和 `enrichplot` 进行 GO BP、KEGG、Reactome、MSigDB Hallmark ORA 展示。
+- ORA background 为 marker 表中所有已测试且可映射 Entrez ID 的基因。
+
+输出目录：
+
+```text
+results/GSE234129/figures/de_enrichment/
+results/GSE234129/tables/de_enrichment/
+results/GSE234129/reports/GSE234129_de_enrichment_analysis_report.md
+```
+
+注意：
+
+- `GSE234129_de_all_leiden05_markers_annotated.tsv` 约 79MB，保留本地，不提交 Git。
+- Git 同步摘要表、top marker 表、富集结果表、报告和 PDF/TIF 图件。

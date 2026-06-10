@@ -1,0 +1,21 @@
+cluster	proposed_global_annotation	broad_annotation	n_up	n_down	n_tested	n_sig_total
+8	B/Plasma | ref:B cell_C3	B/Plasma	803	2345	27176	3148
+19	B/Plasma | ref:pDCs	B/Plasma	990	151	27176	1141
+7	B/Plasma | ref:Plasma_C0	B/Plasma	653	3866	27176	4519
+17	Endothelial/Fibroblast | ref:Endothelial_C0	Endothelial/Fibroblast	2447	640	27176	3087
+16	Endothelial/Fibroblast | ref:VSMC_C3	Endothelial/Fibroblast	3642	746	27176	4388
+13	Myeloid/TAM | ref:Classical Mono_C1	Myeloid/TAM	979	1217	27176	2196
+5	Myeloid/TAM | ref:Classical Mono_C1	Myeloid/TAM	2950	1164	27176	4114
+18	Myeloid/TAM | ref:Mast	Myeloid/TAM	542	403	27176	945
+4	Myeloid/TAM | ref:TAM_C0	Myeloid/TAM	5188	935	27176	6123
+10	Myeloid/TAM | ref:TAM_C3	Myeloid/TAM	2158	787	27176	2945
+12	Myeloid/TAM | ref:TAM_C4	Myeloid/TAM	104	4604	27176	4708
+0	T/NK | ref:CD4_C1	T/NK	1131	2836	27176	3967
+2	T/NK | ref:CD4_C2	T/NK	1280	1455	27176	2735
+1	T/NK | ref:CD8_C0	T/NK	983	2120	27176	3103
+3	T/NK | ref:CD8_C1	T/NK	1120	1493	27176	2613
+14	T/NK | ref:CD8_C3	T/NK	489	853	27176	1342
+15	T/NK | ref:DNT	T/NK	912	343	27176	1255
+9	T/NK | ref:NK_C1	T/NK	899	1008	27176	1907
+6	T/NK | ref:NK_C2	T/NK	678	1672	27176	2350
+11	T/NK | ref:NK_C3	T/NK	583	670	27176	1253
