@@ -1,0 +1,15 @@
+comparison	blind_annotation	dominant_holdout_label	dominant_holdout_fraction	n_cells
+original_celltype	B cell	B cell_C2	0.494833524684271	871
+original_celltype	Endothelial	Endothelial_C0	0.38961038961039	154
+original_celltype	Fibroblast/Pericyte	Fibroblast_C2	0.251968503937008	254
+original_celltype	Myeloid/TAM	TAM_C0	0.299322799097065	4430
+original_celltype	NK cell	NK_C1	0.208284939992257	2583
+original_celltype	Plasma cell	Plasma_C0	0.461105904404873	1067
+original_celltype	T cell	CD4_C1	0.126417986714359	9785
+simulated_reference	B cell	B/Plasma | ref:B cell_C3	1	3421
+simulated_reference	Endothelial	Endothelial/Fibroblast | ref:Endothelial_C0	0.990668740279938	643
+simulated_reference	Fibroblast/Pericyte	Endothelial/Fibroblast | ref:VSMC_C3	0.99484004127967	969
+simulated_reference	Myeloid/TAM	Myeloid/TAM | ref:Classical Mono_C1	0.378919356704848	17286
+simulated_reference	NK cell	T/NK | ref:NK_C2	0.478712772336598	10006
+simulated_reference	Plasma cell	B/Plasma | ref:Plasma_C0	0.939759036144578	4316
+simulated_reference	T cell	T/NK | ref:CD4_C1	0.300713659697008	39935

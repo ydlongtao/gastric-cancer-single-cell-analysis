@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSE234129 200-Gene Raw + Simulated Blind Annotation Report</title>
+<style>
+:root{--ink:#1f2933;--muted:#667085;--line:#d7dee8;--bg:#f6f8fb;--panel:#ffffff;--accent:#145da0;--ok:#0f766e;--warn:#b45309;--bad:#b91c1c;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.62;}
+header{background:#ffffff;border-bottom:1px solid var(--line);padding:32px 44px 24px;} main{max-width:1180px;margin:0 auto;padding:28px 32px 48px;}
+h1{font-size:28px;margin:0 0 8px;} h2{font-size:21px;margin:30px 0 12px;} h3{font-size:17px;margin:22px 0 8px;} .lead{color:var(--muted);font-size:15px;margin:0;}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px 20px;margin:16px 0;} .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}
+.metric{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px;} .metric b{display:block;font-size:22px;color:var(--accent);} .metric span{color:var(--muted);font-size:13px;}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:13px;} th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;} th{background:#edf3f9;text-align:left;font-weight:650;} tr:nth-child(even) td{background:#fbfdff;}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;} .tag{display:inline-block;background:#e8f1fb;color:#0f4c81;border-radius:999px;padding:2px 8px;font-weight:650;white-space:nowrap;}
+.conf{display:inline-block;border-radius:999px;padding:2px 8px;font-weight:650;color:#fff;} .conf.high{background:var(--ok);} .conf.medium{background:var(--warn);} .conf.low{background:var(--bad);}
+.subtle{color:var(--muted);} .warn{border-left:4px solid var(--warn);} .ok{border-left:4px solid var(--ok);} .links a{display:inline-block;margin-right:16px;color:var(--accent);text-decoration:none;} .links a:hover{text-decoration:underline;}
+@media(max-width:900px){header{padding:24px;} main{padding:18px;} .grid{grid-template-columns:1fr 1fr;} table{font-size:12px;}}
+</style>
+</head>
+<body>
+<header>
+<h1>GSE234129 Raw + scDesign3 Simulated 200-Gene Blind Annotation Report</h1>
+<p class="lead">This English report mirrors the Chinese HTML report and focuses on interpreting the Cluster Annotation Summary after blind reannotation of merged original and simulated cells.</p>
+</header>
+<main>
+<section class="grid">
+<div class="metric"><b>95,720</b><span>Merged cells: 19,144 original + 76,576 simulated</span></div>
+<div class="metric"><b>200</b><span>Shared genes, so interpretation should focus on broad lineages</span></div>
+<div class="metric"><b>0.898</b><span>Original broad-lineage ARI</span></div>
+<div class="metric"><b>0.999</b><span>Simulated broad-lineage ARI</span></div>
+</section>
+<section class="card ok">
+<h2>Key Conclusions</h2>
+<p>The blind annotation performs well at the broad-lineage level. For original cells, broad-lineage ARI is 0.898 and NMI is 0.828. For simulated cells, broad-lineage ARI is 0.999 and NMI is 0.996. This indicates that the 200-gene merged object recovers major T/NK, B/Plasma, Myeloid/TAM, and stromal structures.</p>
+<p>Fine cell-type agreement is much lower: original fine-celltype ARI is 0.120, and simulated reference-label ARI is 0.310. Therefore, the cluster calls should be treated as broad-lineage annotations rather than final CD4/CD8/TAM/plasma substate calls.</p>
+</section>
+<section class="card">
+<h2>Cluster Annotation Summary Overview</h2>
+<p>The merged object contains 19 clusters. The dominant compartments are T cell, Myeloid/TAM, NK cell, Plasma cell, and B cell, with smaller endothelial and fibroblast/pericyte populations. Most clusters have concordant marker-panel and SingleR HPCA evidence and are marked high confidence; two clusters are medium confidence because of reference conflict or unstable reference mapping.</p>
+<table><thead><tr><th>Blind annotation</th><th>Cells</th><th>Fraction</th><th>High-confidence clusters</th><th>Medium-confidence clusters</th><th>Low-confidence clusters</th></tr></thead><tbody>
+<tr><td>T cell</td><td>49,720</td><td>51.9%</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>Myeloid/TAM</td><td>21,716</td><td>22.7%</td><td>5</td><td>1</td><td>0</td></tr>
+<tr><td>NK cell</td><td>12,589</td><td>13.2%</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>Plasma cell</td><td>5,383</td><td>5.6%</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>B cell</td><td>4,292</td><td>4.5%</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>Fibroblast/Pericyte</td><td>1,223</td><td>1.3%</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>Endothelial</td><td>797</td><td>0.8%</td><td>1</td><td>0</td><td>0</td></tr>
+</tbody></table>
+</section>
+<section class="card warn">
+<h2>Clusters Requiring Cautious Interpretation</h2>
+<h3>Cluster 15: Myeloid/TAM versus endothelial conflict</h3>
+<p>Cluster 15 is assigned as Myeloid/TAM by marker scoring, but SingleR points to an endothelial label and the marker-score margin is small. It may reflect myeloid/endothelial signal mixing, a low-information cluster, or reference drift from the 200-gene restriction. It should be reviewed in a larger-gene simulation or full-gene original object.</p>
+<h3>Cluster 18: plasma-cell markers are clear, but HPCA mapping is abnormal</h3>
+<p>Cluster 18 contains JCHAIN, MZB1, and DERL3, supporting a plasma-cell interpretation. However, SingleR returns GMP, indicating unstable HPCA annotation on the 200-gene subset. Use this as a plasma-cell tendency and avoid finer subtyping.</p>
+<h3>Cluster 17: original-cell-enriched inflammatory myeloid cluster</h3>
+<p>Cluster 17 is supported by S100A8, FCN1, S100A9, and LYZ, and SingleR maps it to CD14+ monocytes. Its original-cell fraction reaches 96.3%, suggesting a real-data inflammatory monocyte/myeloid state that is under-represented in the simulation.</p>
+</section>
+<section class="card">
+<h2>Per-Cluster Interpretation</h2>
+<table><thead><tr><th>Cluster</th><th>Cells</th><th>Blind annotation</th><th>Confidence</th><th>Marker score</th><th>Score margin</th><th>SingleR HPCA</th><th>Original/simulated ratio</th><th>Interpretation</th></tr></thead><tbody>
+<tr><td class="mono">0</td><td>16,783</td><td><span class="tag">T cell</span></td><td><span class="conf high">high</span></td><td>2.017</td><td>1.507</td><td>T_cell:CD4+_central_memory</td><td>19.9% / 80.1%</td><td>The marker panel supports T cell, with key evidence genes including LTB,CD3E,IL7R,CD3D,IL32,LDHB,CD3G,SPOCK2,PTPRCAP,IFITM1. SingleR HPCA returns T_cell:CD4+_central_memory, mapped to T cell. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">1</td><td>14,209</td><td><span class="tag">T cell</span></td><td><span class="conf high">high</span></td><td>2.901</td><td>1.333</td><td>T_cell:gamma-delta</td><td>19.4% / 80.6%</td><td>The marker panel supports T cell, with key evidence genes including NKG7,CD8A,CD8B,CCL5,GZMH,CTSW,GZMA,CST7,GZMK,CD3E. SingleR HPCA returns T_cell:gamma-delta, mapped to T cell. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">2</td><td>9,077</td><td><span class="tag">T cell</span></td><td><span class="conf high">high</span></td><td>2.812</td><td>1.068</td><td>T_cell:CD8+_Central_memory</td><td>19.8% / 80.2%</td><td>The marker panel supports T cell, with key evidence genes including CD8A,NKG7,CCL5,GZMA,CD8B,CD3D,NR4A2,CST7,CD69,TNFAIP3. SingleR HPCA returns T_cell:CD8+_Central_memory, mapped to T cell. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">3</td><td>8,809</td><td><span class="tag">T cell</span></td><td><span class="conf high">high</span></td><td>2.183</td><td>1.501</td><td>T_cell:CD4+_central_memory</td><td>20.3% / 79.7%</td><td>The marker panel supports T cell, with key evidence genes including ICOS,CD3D,SPOCK2,CD3E,TNFAIP3,CREM,CD69,CD2,LTB,RGS1. SingleR HPCA returns T_cell:CD4+_central_memory, mapped to T cell. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">4</td><td>7,762</td><td><span class="tag">Myeloid/TAM</span></td><td><span class="conf high">high</span></td><td>2.864</td><td>1.119</td><td>Monocyte:CD14+</td><td>14.8% / 85.2%</td><td>The marker panel supports Myeloid/TAM, with key evidence genes including AIF1,CST3,SERPINA1,LYZ,LST1,MS4A6A,SPI1,IFI30,S100A9,CD68. SingleR HPCA returns Monocyte:CD14+, mapped to Myeloid/TAM. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">Simulated cells are over-represented, suggesting stronger scDesign3 expansion of this state.</span></td></tr>
+<tr><td class="mono">5</td><td>7,600</td><td><span class="tag">Myeloid/TAM</span></td><td><span class="conf high">high</span></td><td>3.094</td><td>1.520</td><td>Macrophage:monocyte-derived:IL-4/Dex/cntrl</td><td>21.3% / 78.7%</td><td>The marker panel supports Myeloid/TAM, with key evidence genes including CD68,CD14,AIF1,DAB2,SPI1,MAFB,FCGRT,CST3,MS4A6A,CTSL. SingleR HPCA returns Macrophage:monocyte-derived:IL-4/Dex/cntrl, mapped to Myeloid/TAM. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">6</td><td>5,882</td><td><span class="tag">NK cell</span></td><td><span class="conf high">high</span></td><td>2.796</td><td>1.441</td><td>NK_cell</td><td>20.8% / 79.2%</td><td>The marker panel supports NK cell, with key evidence genes including NKG7,FGFBP2,PRF1,KLRD1,GZMB,CTSW,CST7,TYROBP,NR4A2,GZMA. SingleR HPCA returns NK_cell, mapped to NK cell. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">7</td><td>5,062</td><td><span class="tag">Plasma cell</span></td><td><span class="conf medium">medium</span></td><td>4.600</td><td>3.103</td><td>B_cell:Plasma_cell</td><td>19.8% / 80.2%</td><td>The marker panel supports Plasma cell, with key evidence genes including MZB1,JCHAIN,DERL3,CD79A,IGHA1,FKBP11,TNFRSF17,PRDX4,IGKC,SEC11C. SingleR HPCA returns B_cell:Plasma_cell, mapped to B cell. Confidence is medium, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">8</td><td>4,292</td><td><span class="tag">B cell</span></td><td><span class="conf high">high</span></td><td>3.833</td><td>3.115</td><td>B_cell:immature</td><td>20.3% / 79.7%</td><td>The marker panel supports B cell, with key evidence genes including MS4A1,CD79A,BANK1,CD79B,VPREB3,LINC00926,CD19,RALGPS2,HVCN1,HLA-DRA. SingleR HPCA returns B_cell:immature, mapped to B cell. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">9</td><td>3,835</td><td><span class="tag">NK cell</span></td><td><span class="conf high">high</span></td><td>2.922</td><td>1.820</td><td>NK_cell:IL2</td><td>20.7% / 79.3%</td><td>The marker panel supports NK cell, with key evidence genes including FGFBP2,KLRD1,KLRF1,PRF1,SPON2,NKG7,GZMH,CTSW,GZMB,FCGR3A. SingleR HPCA returns NK_cell:IL2, mapped to NK cell. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">10</td><td>3,241</td><td><span class="tag">Myeloid/TAM</span></td><td><span class="conf high">high</span></td><td>2.719</td><td>0.968</td><td>Monocyte:CD16-</td><td>19.4% / 80.6%</td><td>The marker panel supports Myeloid/TAM, with key evidence genes including PLAUR,SERPINA1,AIF1,LYZ,LST1,CST3,SPI1,IFI30,CD68,FCER1G. SingleR HPCA returns Monocyte:CD16-, mapped to Myeloid/TAM. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">11</td><td>2,872</td><td><span class="tag">NK cell</span></td><td><span class="conf high">high</span></td><td>2.639</td><td>1.710</td><td>NK_cell:IL2</td><td>19.6% / 80.4%</td><td>The marker panel supports NK cell, with key evidence genes including KLRD1,CTSW,NKG7,TYROBP,MATK,SH2D1B,IL2RB,CLIC3,TRDC,XCL2. SingleR HPCA returns NK_cell:IL2, mapped to NK cell. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">12</td><td>1,937</td><td><span class="tag">Myeloid/TAM</span></td><td><span class="conf high">high</span></td><td>2.387</td><td>0.465</td><td>Macrophage:monocyte-derived:IL-4/Dex/cntrl</td><td>20.5% / 79.5%</td><td>The marker panel supports Myeloid/TAM, with key evidence genes including AIF1,CST3,LYZ,APOC1,CD68,TYROBP,APOE,C1QA,C1QC,C1QB. SingleR HPCA returns Macrophage:monocyte-derived:IL-4/Dex/cntrl, mapped to Myeloid/TAM. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">13</td><td>1,223</td><td><span class="tag">Fibroblast/Pericyte</span></td><td><span class="conf high">high</span></td><td>3.650</td><td>2.910</td><td>iPS_cells:fibroblasts</td><td>20.8% / 79.2%</td><td>The marker panel supports Fibroblast/Pericyte, with key evidence genes including COL1A1,DCN,SPON2,CST3,IFITM3,TIMP1,FCGRT,APOE,PRDX4,VCAN. SingleR HPCA returns iPS_cells:fibroblasts, mapped to Fibroblast/Pericyte. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">14</td><td>842</td><td><span class="tag">T cell</span></td><td><span class="conf high">high</span></td><td>2.581</td><td>0.916</td><td>T_cell:CD4+_effector_memory</td><td>12.0% / 88.0%</td><td>The marker panel supports T cell, with key evidence genes including GZMA,CCL5,CD3E,IL32,NKG7,GZMH,CST7,CD3D,CD2,HLA-A. SingleR HPCA returns T_cell:CD4+_effector_memory, mapped to T cell. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">Simulated cells are over-represented, suggesting stronger scDesign3 expansion of this state.</span></td></tr>
+<tr><td class="mono">15</td><td>826</td><td><span class="tag">Myeloid/TAM</span></td><td><span class="conf medium">medium</span></td><td>0.736</td><td>0.198</td><td>Endothelial_cells:HUVEC:PR8-infected</td><td>36.4% / 63.6%</td><td>This cluster is assigned as Myeloid/TAM by marker scoring, but SingleR points to an endothelial label and the marker-score margin is small. It is the most ambiguous cluster in this analysis and should be reviewed for myeloid/endothelial mixing, low-information signal, or reference drift caused by the 200-gene restriction.<br><span class="subtle">Original-cell fraction is above the expected 1:4 merge ratio, so this state deserves attention in real-data interpretation.</span></td></tr>
+<tr><td class="mono">16</td><td>797</td><td><span class="tag">Endothelial</span></td><td><span class="conf high">high</span></td><td>3.851</td><td>2.769</td><td>Endothelial_cells:lymphatic:TNFa_48h</td><td>19.3% / 80.7%</td><td>The marker panel supports Endothelial, with key evidence genes including VWF,PECAM1,IFITM3,DAB2,MEF2C,FCGRT,FABP5,NPC2,TIMP1,CTSB. SingleR HPCA returns Endothelial_cells:lymphatic:TNFa_48h, mapped to Endothelial. Confidence is high, so this call is appropriate for broad-lineage interpretation.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+<tr><td class="mono">17</td><td>350</td><td><span class="tag">Myeloid/TAM</span></td><td><span class="conf high">high</span></td><td>2.779</td><td>1.402</td><td>Monocyte:CD14+</td><td>96.3% / 3.7%</td><td>This cluster is supported by S100A8, FCN1, S100A9, and LYZ, while SingleR maps it to CD14+ monocytes. Its very high original-cell fraction suggests an inflammatory monocyte/myeloid state that is present in the real data but under-represented in the simulation.<br><span class="subtle">Strongly enriched for original cells, suggesting a real-data state that was weakly reproduced by the simulation.</span></td></tr>
+<tr><td class="mono">18</td><td>321</td><td><span class="tag">Plasma cell</span></td><td><span class="conf medium">medium</span></td><td>2.415</td><td>0.605</td><td>GMP</td><td>19.9% / 80.1%</td><td>Marker evidence supports Plasma cell, with genes such as JCHAIN, MZB1, and DERL3. SingleR returns GMP and does not map cleanly to the expected lineage, so this should be used as a plasma-cell tendency rather than a fine subtype call.<br><span class="subtle">The original/simulated ratio is close to the expected merge ratio, indicating a stable state in the merged space.</span></td></tr>
+</tbody></table>
+</section>
+<section class="card">
+<h2>Comparison Metrics</h2>
+<table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody>
+<tr><td class="mono">original_blind_vs_celltype_ari</td><td>0.120</td></tr>
+<tr><td class="mono">original_blind_vs_celltype_nmi</td><td>0.504</td></tr>
+<tr><td class="mono">original_broad_blind_vs_celltype_broad_ari</td><td>0.898</td></tr>
+<tr><td class="mono">original_broad_blind_vs_celltype_broad_nmi</td><td>0.828</td></tr>
+<tr><td class="mono">simulated_blind_vs_reference_ari</td><td>0.310</td></tr>
+<tr><td class="mono">simulated_blind_vs_reference_nmi</td><td>0.661</td></tr>
+<tr><td class="mono">simulated_broad_blind_vs_reference_broad_ari</td><td>0.999</td></tr>
+<tr><td class="mono">simulated_broad_blind_vs_reference_broad_nmi</td><td>0.996</td></tr>
+<tr><td class="mono">mean_cluster_source_balance_score</td><td>0.194</td></tr>
+<tr><td class="mono">median_cluster_source_balance_score</td><td>0.199</td></tr>
+</tbody></table>
+</section>
+<section class="card">
+<h2>Output Index</h2>
+<p class="links">
+<a href="../figures/blind_annotation/GSE234129_raw_simulated_200gene_umap_blind_annotation.pdf">UMAP: blind annotation PDF</a>
+<a href="../figures/blind_annotation/GSE234129_raw_simulated_200gene_umap_source.pdf">UMAP: source PDF</a>
+<a href="../figures/blind_annotation/GSE234129_raw_simulated_200gene_marker_dotplot.pdf">Marker dotplot PDF</a>
+<a href="../tables/blind_annotation/GSE234129_raw_simulated_200gene_cluster_annotation.tsv">Cluster annotation TSV</a>
+</p>
+<p class="subtle">Report path: results/GSE234129/reports/GSE234129_raw_simulated_200gene_blind_annotation_english_report.html</p>
+</section>
+</main>
+</body>
+</html>

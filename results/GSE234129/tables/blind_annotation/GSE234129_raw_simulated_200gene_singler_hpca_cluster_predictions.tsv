@@ -1,0 +1,20 @@
+cluster	singler_label	singler_pruned_label	singler_lineage	singler_status
+0	T_cell:CD4+_central_memory	T_cell:CD4+_central_memory	T cell	ok
+1	T_cell:gamma-delta	T_cell:gamma-delta	T cell	ok
+10	Monocyte:CD16-	Monocyte:CD16-	Myeloid/TAM	ok
+11	NK_cell:IL2	NK_cell:IL2	NK cell	ok
+12	Macrophage:monocyte-derived:IL-4/Dex/cntrl	Macrophage:monocyte-derived:IL-4/Dex/cntrl	Myeloid/TAM	ok
+13	iPS_cells:fibroblasts	iPS_cells:fibroblasts	Fibroblast/Pericyte	ok
+14	T_cell:CD4+_effector_memory	T_cell:CD4+_effector_memory	T cell	ok
+15	Endothelial_cells:HUVEC:PR8-infected	Endothelial_cells:HUVEC:PR8-infected	Endothelial	ok
+16	Endothelial_cells:lymphatic:TNFa_48h	Endothelial_cells:lymphatic:TNFa_48h	Endothelial	ok
+17	Monocyte:CD14+	Monocyte:CD14+	Myeloid/TAM	ok
+18	GMP	GMP	Unmapped HPCA label	ok
+2	T_cell:CD8+_Central_memory	T_cell:CD8+_Central_memory	T cell	ok
+3	T_cell:CD4+_central_memory	T_cell:CD4+_central_memory	T cell	ok
+4	Monocyte:CD14+	Monocyte:CD14+	Myeloid/TAM	ok
+5	Macrophage:monocyte-derived:IL-4/Dex/cntrl	Macrophage:monocyte-derived:IL-4/Dex/cntrl	Myeloid/TAM	ok
+6	NK_cell	NK_cell	NK cell	ok
+7	B_cell:Plasma_cell	B_cell:Plasma_cell	B cell	ok
+8	B_cell:immature	B_cell:immature	B cell	ok
+9	NK_cell:IL2	NK_cell:IL2	NK cell	ok
