@@ -4,6 +4,79 @@
 
 本项目用于整合分析胃癌相关的单细胞转录组和空间转录组数据。主要语言和工具链包括 R、Python、Rust 及其生态程序包。
 
+## 项目亮点
+
+本仓库围绕胃癌单细胞数据集 `GSE234129` 建立了一套可复现的分析流程，覆盖原始数据整理、Scanpy/Seurat 质控聚类、scop 可视化、差异表达和通路富集、scDesign3 模拟，以及模拟数据与原始数据的系统比较。
+
+当前重点结果是：基于 19,144 个 QC 后原始细胞，用 `scDesign3` 生成 76,576 个模拟细胞，并在 200 个共同基因上将原始数据与模拟数据合并，进行不参考原有注释的盲法细胞群重新注释。结果显示，200 基因合并对象能够较好恢复 broad lineage 层面的结构，但不适合直接作为 CD4/CD8/TAM/plasma 等精细亚群的最终判定。
+
+关键比较指标：
+
+| 比较对象 | ARI | NMI | 解读 |
+| --- | ---: | ---: | --- |
+| 原始数据：盲法注释 vs 原有精细 celltype | 0.120 | 0.504 | 精细亚群一致性有限，符合 200 基因输入的预期限制。 |
+| 原始数据：盲法 broad lineage vs 原有 broad lineage | 0.898 | 0.828 | 大类谱系恢复较好。 |
+| 模拟数据：盲法注释 vs 参考标签 | 0.310 | 0.661 | 精细标签层面有合并和塌缩。 |
+| 模拟数据：盲法 broad lineage vs 参考 broad lineage | 0.999 | 0.996 | 模拟数据在大类谱系层面高度一致。 |
+
+## 图件总览
+
+### 1. 主流程细胞注释和整体结构
+
+QC 后细胞在 UMAP 空间中形成 T/NK、B/Plasma、Myeloid/TAM、Stromal 等主要结构。
+
+<p align="center">
+  <img src="docs/readme_figures/gse234129_scop_umap_global_annotation.png" alt="GSE234129 global annotation UMAP" width="760">
+</p>
+
+### 2. scDesign3 原始数据 vs 模拟数据
+
+scDesign3 四倍模拟用于考察当前分析流程在生成数据上的稳定性。UMAP 显示原始细胞和模拟细胞整体能够投射到相近表达空间；组成和 marker 表达图用于进一步检查模拟结果是否保留主要细胞群结构。
+
+| 原始/模拟 UMAP | 细胞组成对比 |
+| --- | --- |
+| <img src="docs/readme_figures/gse234129_scdesign3_original_vs_simulated_umap.png" alt="Original vs simulated UMAP" width="420"> | <img src="docs/readme_figures/gse234129_scdesign3_original_vs_simulated_composition.png" alt="Original vs simulated composition" width="420"> |
+
+| 原始/模拟 marker 表达 |
+| --- |
+| <img src="docs/readme_figures/gse234129_scdesign3_original_vs_simulated_marker_dotplot.png" alt="Original vs simulated marker dotplot" width="860"> |
+
+### 3. 原始数据与模拟数据合并后的盲法重新注释
+
+为避免直接继承原有注释，本项目将原始细胞与模拟细胞合并后重新聚类，并使用 marker 面板和 `SingleR`/`celldex` HPCA 进行 blind annotation。原有 `celltype` 和模拟参考标签仅在最后作为 holdout label 参与比较。
+
+| 合并对象按来源着色 | 合并对象按盲法注释着色 |
+| --- | --- |
+| <img src="docs/readme_figures/gse234129_blind_umap_source.png" alt="Merged raw and simulated UMAP by source" width="420"> | <img src="docs/readme_figures/gse234129_blind_umap_annotation.png" alt="Merged raw and simulated UMAP by blind annotation" width="420"> |
+
+| 原始细胞：盲法注释 vs 原有 celltype | 模拟细胞：盲法注释 vs 参考标签 |
+| --- | --- |
+| <img src="docs/readme_figures/gse234129_blind_original_heatmap.png" alt="Blind annotation versus original celltype" width="420"> | <img src="docs/readme_figures/gse234129_blind_simulated_heatmap.png" alt="Blind annotation versus simulated reference labels" width="420"> |
+
+| 盲法注释 marker dotplot |
+| --- |
+| <img src="docs/readme_figures/gse234129_blind_marker_dotplot.png" alt="Blind annotation marker dotplot" width="860"> |
+
+重点解释：
+
+- `Cluster 15`：marker 面板偏向 `Myeloid/TAM`，但 `SingleR` 指向 endothelial，属于本次最需要谨慎解释的混合/低信息 cluster。
+- `Cluster 17`：由 `S100A8`、`FCN1`、`S100A9`、`LYZ` 等支持，且原始细胞占比 96.3%，提示可能是真实数据中特异的炎症性单核/髓系状态。
+- `Cluster 18`：`JCHAIN`、`MZB1`、`DERL3` 支持 plasma cell 倾向，但 `SingleR` 映射异常，不建议做精细亚型判断。
+
+相关报告：
+
+- [中文 HTML 解读报告](results/GSE234129/reports/GSE234129_raw_simulated_200gene_blind_annotation_chinese_report.html)
+- [English HTML report](results/GSE234129/reports/GSE234129_raw_simulated_200gene_blind_annotation_english_report.html)
+- [Markdown analysis report](results/GSE234129/reports/GSE234129_raw_simulated_200gene_blind_annotation_comparison_report.md)
+
+### 4. 差异表达和通路富集
+
+在 Leiden 0.5 cluster 和全局注释基础上整理差异表达 marker，并进行 GO、KEGG、Reactome 和 Hallmark ORA 富集。下图展示不同全局注释群体的 GO Biological Process 富集结果。
+
+<p align="center">
+  <img src="docs/readme_figures/gse234129_de_go_bp_dotplot_global_annotation.png" alt="GO BP enrichment dotplot by global annotation" width="760">
+</p>
+
 ## 研究内容
 
 - 单细胞转录组数据质控、标准化、降维、聚类和细胞类型注释。
